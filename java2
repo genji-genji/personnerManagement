@@ -1,0 +1,43 @@
+package xcw;
+
+public class School {
+       static int scoreLine;
+      
+      public int getscoreLine() {
+    	  return scoreLine;
+      }
+      public  void setscoreLine(int scoreLine) {
+    	  this.scoreLine=scoreLine;
+      }
+}
+ class student{
+	  String name;
+	  int id,i,s;
+	 student(String name,int id,int i,int s){
+		 this.name=name;
+		 this.id=id;
+		 this.i=i;
+		 this.s=s;
+	 }
+	 public String getname() {
+		 return name;		 
+	 }
+	 public int getid() {
+		 return id;
+	 }
+	 public int geti() {
+		 return i;
+	 }
+	 public int gets() {
+		 return s;
+	 }
+ }
+  class Luqu{
+	  public void luqu(student s,School sch) {
+		  if(s.geti()>sch.getscoreLine()||s.gets()>96&&s.geti()>300)
+			  System.out.println(s.getname()+"被录取");
+		  else
+			System.out.println(s.getname()+"未被录取");
+	  }
+  
+  }
