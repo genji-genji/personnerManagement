@@ -50,7 +50,7 @@ class Ellipse extends Circle{
     	return h;
     }
     public double caluclateArea(double radius,double b,double h) {
-    	return(2*3.14*radius*radius+2*3.14*radius*h);
+    	return(2*3*radius*radius+2*radius*h);
     }
 	@Override
 	public int compareTo(Cylinder o) {
