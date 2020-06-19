@@ -50,7 +50,7 @@ class Ellipse extends Circle{
     	return h;
     }
     public double caluclateArea(double radius,double b,double h) {
-    	return(2*3.14*radius*radius+2*3.14*radius*h);
+    	return(2*3*radius*radius+2*radius*h);
     }
 	@Override
 	public int compareTo(Cylinder o) {
@@ -68,9 +68,9 @@ class Ellipse extends Circle{
 	public  class text2{
 		public void main(String[] args) {
 			 Cylinder c[]=new Cylinder[3];
-			 c[0]=new Cylinder(3,4,6);
-			 c[1]=new Cylinder(4,2,5);
-			 c[3]=new Cylinder(2,3,8);
+			 c[0]=new Cylinder(a's'da);
+			 c[1]=new Cylinder(vdgzg);
+			 c[3]=new Cylinder(da'da);
 			 Arrays.sort(c);
 			 for(int i=0;i<c.length;i++) {
 				 System.out.println(c[i]);
