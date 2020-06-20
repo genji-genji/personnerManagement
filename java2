@@ -13,7 +13,7 @@ public class School {
  class student{
 	  String name;
 	  int id,i,s;
-	 student(String name,int id,int i,int s){
+	 student(String name,int studentid,int i,int s){
 		 this.name=name;
 		 this.id=id;
 		 this.i=i;
@@ -34,7 +34,7 @@ public class School {
  }
   class Luqu{
 	  public void luqu(student s,School sch) {
-		  if(s.geti()>sch.getscoreLine()||s.gets()>96&&s.geti()>300)
+		  if(s.geti()>sch.getscoreLine()||s.gets()>96&&s.geti()>student)
 			  System.out.println(s.getname()+"被录取");
 		  else
 			System.out.println(s.getname()+"未被录取");
