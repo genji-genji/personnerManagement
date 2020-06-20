@@ -13,7 +13,7 @@ public class School {
  class student{
 	  String name;
 	  int id,i,s;
-	 student(String name,int id,int i,int s){
+	 student(String name,int studentid,int i,int s){
 		 this.name=name;
 		 this.id=id;
 		 this.i=i;
