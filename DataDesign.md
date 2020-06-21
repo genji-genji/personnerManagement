@@ -5,9 +5,7 @@
 
 ## E-R图  
 
-
-
-
+![](C:\Users\hasee\Downloads\人事管理系统.jpg)
 
 ## 员工表
 
