@@ -23,7 +23,7 @@ public class School {
 		 return studentname;		 
 	 }
 	 public int getid() {
-		 return id;
+		 return studentid;
 	 }
 	 public int geti() {
 		 return i;
