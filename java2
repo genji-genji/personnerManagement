@@ -20,7 +20,7 @@ public class School {
 		 this.s=s;
 	 }
 	 public String getname() {
-		 return name;		 
+		 return studentname;		 
 	 }
 	 public int getid() {
 		 return id;
