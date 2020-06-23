@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS USER(
 	user_id varchar(20) PRIMARY KEY,
 	password varchar(20) NOT NULL
 
-)；
+);
 
 insert into USER values('root','123456');
 
@@ -83,6 +83,8 @@ CREATE TABLE IF NOT EXISTS staff(
 	);
 alter table staff AUTO_INCREMENT=10000;
 
+insert INTO staff values(0,"男","叶良辰","1980-5-14","456987198005144073",3,2,1,1);
+
 
 CREATE TABLE IF NOT EXISTS TEST_USE(
 	SID INT PRIMARY KEY,
@@ -122,3 +124,9 @@ CREATE TABLE IF NOT EXISTS job_move(
 
 );
 
+select sid,sex,name,BIRTHDAY,ID_NO,origin_name,FORM_name,department_name,job_name
+from staff,origin,FORM,department,job
+where staff.origin_id=origin.origin_id AND
+staff.FORM_id=FORM.FORM_id AND 
+staff.department_id=department.department_id AND
+staff.job_id=job.job_id;
