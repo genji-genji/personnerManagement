@@ -17,7 +17,7 @@ public class School {
 		 this.name=name;
 		 this.id=id;
 		 this.i=i;
-		 this.s=s;
+		 this.sstudents;
 	 }
 	 public String getname() {
 		 return studentname;		 
@@ -25,7 +25,7 @@ public class School {
 	 public int getid() {
 		 return studentid;
 	 }
-	 public int geti() {
+	 public int gstudent
 		 return i;
 	 }
 	 public int gets() {
