@@ -2,6 +2,14 @@ create database IF NOT EXISTS PersonnelManagement;
 
 use PersonnelManagement;
 
+CREATE TABLE IF NOT EXISTS USER(
+	user_id varchar(20) PRIMARY KEY,
+	password varchar(20) NOT NULL
+
+)；
+
+insert into USER values('root','123456');
+
 
     CREATE TABLE IF NOT EXISTS FORM(
 	FORM_id INT PRIMARY KEY, 
