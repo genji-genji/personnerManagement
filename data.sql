@@ -72,18 +72,20 @@ CREATE TABLE IF NOT EXISTS staff(
 	FORM_id INT NOT NULL,  #外码关联形式 
 	department_id INT NOT NULL, #外码关联部门 
 	job_id INT NOT NULL,     #外码关联岗位 
+	statu_id NOT NULL,
 	check(SEX in('男','女')
 	 AND length(ID_NO)=18 
 	 AND NOT ID_NO REGEXP '[^0-9.]'),#约束身份证只能使2代18位且只能使数字 
 	FOREIGN KEY (origin_id) REFERENCES origin(origin_id),
 	FOREIGN KEY (job_id) REFERENCES job(job_id),
 	FOREIGN KEY (department_id) REFERENCES department(department_id),
-	FOREIGN KEY (FORM_id) REFERENCES FORM(FORM_id)
+	FOREIGN KEY (FORM_id) REFERENCES FORM(FORM_id),
+	FOREIGN KEY (statu_id) REFERENCES statu(statu_id)
 
 	);
 alter table staff AUTO_INCREMENT=10000;
 
-insert INTO staff values(0,"男","叶良辰","1980-5-14","456987198005144073",3,2,1,1);
+insert INTO staff values(0,"男","叶良辰","1980-5-14","456987198005144073",3,2,1,1,2);
 
 
 CREATE TABLE IF NOT EXISTS TEST_USE(
