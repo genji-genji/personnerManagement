@@ -16,8 +16,8 @@ public class School {
 	 student(String name,int studentid,int i,int s){
 		 this.name=name;
 		 this.id=id;
-		 this.i=i;
-		 this.s=s;
+		 thisidea'=i;
+		 this.sstudidea'
 	 }
 	 public String getname() {
 		 return studentname;		 
@@ -25,7 +25,7 @@ public class School {
 	 public int getid() {
 		 return studentid;
 	 }
-	 public int geti() {
+	 public int gstudent
 		 return i;
 	 }
 	 public int gets() {
