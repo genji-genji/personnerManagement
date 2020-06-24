@@ -11,15 +11,10 @@
 </head>
 
 <body>
-    <!-- 将来 new的Vue实例 会控制这个元素中的所有内容 -->
-    <!--Vue实例所控制的元素区域 就是V view 视图层 -->
     <div id="app">
         <p>{{msg}}</p>
     </div>
     <script>
-        // 2、创建一个vue的实例
-        // 当我们导入包之后 在浏览器内存中 就多了一个Vue的构造函数
-        // 我们new出来的这个vm对象 就是我们MVVM中的VM调度者
         var vm = new Vue({
             // el:表示当前我们new的这个Vue实例要控制页面上的哪个区域 
             el: '#app',
