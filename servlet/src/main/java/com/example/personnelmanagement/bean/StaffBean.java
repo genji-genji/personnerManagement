@@ -6,16 +6,34 @@ public class StaffBean {
     private String name;
     private String birthday;
     private String id_no;
-    private String department_id;
+    private int department_id;
     private String department_name;
-    private String job_id;
+    private int job_id;
     private String job_name;
-    private String form_id;
+    private int form_id;
     private String form_name;
-    private String origin_id;
+    private int origin_id;
     private String origin_name;
-    private String statu_id;
+    private int statu_id;
     private String statu_name;
+
+    public StaffBean(int sid,String sex,String name,String birthday,String id_no,
+                     int origin_id,int form_id,int department_id,int job_id,int statu_id){
+        this.sid=sid;
+        this.sex=sex;
+        this.name=name;
+        this.birthday=birthday;
+        this.id_no=id_no;
+        this.origin_id=origin_id;
+        this.form_id=form_id;
+        this.department_id=department_id;
+        this.job_id=job_id;
+        this.statu_id=statu_id;
+
+    }
+    public StaffBean(){
+
+    }
 
     public int getSid() {
         return sid;
@@ -81,35 +99,35 @@ public class StaffBean {
         this.form_name = form_name;
     }
 
-    public String getOrigin_id() {
+    public int getOrigin_id() {
         return origin_id;
     }
 
-    public void setOrigin_id(String origin_id) {
+    public void setOrigin_id(int origin_id) {
         this.origin_id = origin_id;
     }
 
-    public String getDepartment_id() {
+    public int getDepartment_id() {
         return department_id;
     }
 
-    public void setDepartment_id(String department_id) {
+    public void setDepartment_id(int department_id) {
         this.department_id = department_id;
     }
 
-    public String getJob_id() {
+    public int getJob_id() {
         return job_id;
     }
 
-    public void setJob_id(String job_id) {
+    public void setJob_id(int job_id) {
         this.job_id = job_id;
     }
 
-    public String getForm_id() {
+    public int getForm_id() {
         return form_id;
     }
 
-    public void setForm_id(String form_id) {
+    public void setForm_id(int form_id) {
         this.form_id = form_id;
     }
 
@@ -121,11 +139,11 @@ public class StaffBean {
         this.origin_name = origin_name;
     }
 
-    public String getStatu_id() {
+    public int getStatu_id() {
         return statu_id;
     }
 
-    public void setStatu_id(String statu_id) {
+    public void setStatu_id(int statu_id) {
         this.statu_id = statu_id;
     }
 
@@ -135,5 +153,9 @@ public class StaffBean {
 
     public void setStatu_name(String statu_name) {
         this.statu_name = statu_name;
+    }
+    @Override
+    public String toString(){
+        return ""+this.sid+" "+this.sex+" "+this.name+""+this.origin_name;
     }
 }
