@@ -20,7 +20,7 @@ public class School {
 		 g'd'f'g'studentname
 	 }
 	 public String getname() {
-		 return studentname;		 
+		 s'System;		 
 	 }
 	 public int getid() {
 		 return studentid;
