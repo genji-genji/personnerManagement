@@ -17,7 +17,7 @@ public class School {
 		 this.name=name;
 		 this.id=id;
 		 sfclass
-		 s'f'if
+		 g'd'f'g'studentname
 	 }
 	 public String getname() {
 		 return studentname;		 
