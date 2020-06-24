@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS staff(
 	FORM_id INT NOT NULL,  #外码关联形式 
 	department_id INT NOT NULL, #外码关联部门 
 	job_id INT NOT NULL,     #外码关联岗位 
-	statu_id NOT NULL,
+	statu_id INT NOT NULL,
 	check(SEX in('男','女')
 	 AND length(ID_NO)=18 
 	 AND NOT ID_NO REGEXP '[^0-9.]'),#约束身份证只能使2代18位且只能使数字 

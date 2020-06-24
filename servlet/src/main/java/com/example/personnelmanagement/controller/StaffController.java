@@ -1,6 +1,7 @@
 package com.example.personnelmanagement.controller;
 
 import com.example.personnelmanagement.bean.StaffBean;
+import com.example.personnelmanagement.mapper.StaffMapper;
 import com.example.personnelmanagement.service.StaffService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,11 +14,13 @@ public class StaffController {
 
     @Autowired
     private StaffService staffService;
-//    @RequestMapping(value = "/serchStaff",method = RequestMethod.GET)
-//    public StaffBean getStaff(@RequestParam (value = "staffId")){
-//
-//    }
-
-
-
+    @RequestMapping(value = "/serchStaff",method = RequestMethod.GET)
+    public StaffBean getStaff(@RequestParam (value = "staffId")int staffId){
+        return staffService.getStaffMessage(staffId);
+        }
+    @RequestMapping(value = "/addStaff",method = RequestMethod.POST)
+    public int
 }
+
+
+
