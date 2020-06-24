@@ -7,7 +7,7 @@ public class School {
     	  return scoreLine;
       }
       public  void setscoreLine(int scoreLine) {
-    	  this.scoreLine=scoreLine;
+    	 a'd's'studentid
       }
 }
  class student{
@@ -16,11 +16,11 @@ public class School {
 	 student(String name,int studentid,int i,int s){
 		 this.name=name;
 		 this.id=id;
-		 thisidea'=i;
-		 this.sstudidea'
+		 sfclass
+		 g'd'f'g'studentname
 	 }
 	 public String getname() {
-		 return studentname;		 
+		 s'System;		 
 	 }
 	 public int getid() {
 		 return studentid;
