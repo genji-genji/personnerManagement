@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="53865a65-c69e-488c-b2b2-eed6605c79ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/bean/messageBean.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - personnelmanagement@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - personnelmanagement@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - personnelmanagement@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="personnelmanagement: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - personnelmanagement@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="personnelmanagement: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="staff: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - personnelmanagement@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="personnelmanagement: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1dfj1h4HIkAGwkOQ9w4D24EzoCJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/项目阶段成果物_何子煜/03_代码/his_后端" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.PersonnelmanagementApplication">
+    <configuration name="connectTest.contextLoads" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="servlet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.personnelmanagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.personnelmanagement" />
+      <option name="MAIN_CLASS_NAME" value="com.example.personnelmanagement.connectTest" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonnelmanagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="servlet" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.personnelmanagement.PersonnelmanagementApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="53865a65-c69e-488c-b2b2-eed6605c79ac" name="Default Changelist" comment="" />
+      <created>1592822828021</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592822828021</updated>
+      <workItem from="1592822833504" duration="19573000" />
+      <workItem from="1592883937969" duration="19241000" />
+      <workItem from="1592962234069" duration="11828000" />
+    </task>
+    <task id="LOCAL-00001" summary="StaffBean">
+      <created>1592915748024</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592915748024</updated>
+    </task>
+    <task id="LOCAL-00002" summary="StaffBean">
+      <created>1592924760505</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592924760505</updated>
+    </task>
+    <task id="LOCAL-00003" summary="StaffBean">
+      <created>1592927650093</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1592927650093</updated>
+    </task>
+    <task id="LOCAL-00004" summary="StaffBean">
+      <created>1592986057362</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592986057362</updated>
+    </task>
+    <task id="LOCAL-00005" summary="StaffBean">
+      <created>1592987439170</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1592987439170</updated>
+    </task>
+    <task id="LOCAL-00006" summary="StaffBean">
+      <created>1592987452476</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1592987452476</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="StaffBean" />
+    <option name="LAST_COMMIT_MESSAGE" value="StaffBean" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="318" y="84" key="#Project_Structure" timestamp="1592829050907">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="318" y="84" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1592829050907" />
+    <state x="838" y="104" width="674" height="664" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592987679913">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="838" y="104" width="674" height="664" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1592987679913" />
+    <state x="328" y="148" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1592846609752">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="328" y="148" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1592846609752" />
+    <state x="113" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1592981347932">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="113" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1592981347932" />
+    <state x="491" y="615" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592847148549">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="491" y="615" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1592847148549" />
+    <state x="105" y="87" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592847255274">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="105" y="87" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1592847255274" />
+    <state x="344" y="62" key="#connectTest.contextLoads" timestamp="1592850666640">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="344" y="62" key="#connectTest.contextLoads/0.0.1536.824@0.0.1536.824" timestamp="1592850666640" />
+    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1592987450733">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592987450733" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1592979570744">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592979570744" />
+    <state width="1493" height="262" key="GridCell.Tab.0.bottom" timestamp="1592987759592">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="262" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592987759592" />
+    <state width="1493" height="262" key="GridCell.Tab.0.center" timestamp="1592987759592">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="262" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592987759592" />
+    <state width="1493" height="262" key="GridCell.Tab.0.left" timestamp="1592987759592">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="262" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592987759592" />
+    <state width="1493" height="262" key="GridCell.Tab.0.right" timestamp="1592987759592">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="262" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592987759592" />
+    <state width="1493" height="262" key="GridCell.Tab.1.bottom" timestamp="1592987759593">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="262" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592987759593" />
+    <state width="1493" height="262" key="GridCell.Tab.1.center" timestamp="1592987759592">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="262" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1592987759592" />
+    <state width="1493" height="262" key="GridCell.Tab.1.left" timestamp="1592987759592">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="262" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1592987759592" />
+    <state width="1493" height="262" key="GridCell.Tab.1.right" timestamp="1592987759593">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="262" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1592987759593" />
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1592932287612">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592932287612" />
+    <state width="1493" height="261" key="GridCell.Tab.2.center" timestamp="1592932287611">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1592932287611" />
+    <state width="1493" height="261" key="GridCell.Tab.2.left" timestamp="1592932287611">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1592932287611" />
+    <state width="1493" height="261" key="GridCell.Tab.2.right" timestamp="1592932287612">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1592932287612" />
+    <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1592832099823">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="212" height="477" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1592832099823" />
+    <state x="90" y="66" key="SettingsEditor" timestamp="1592983349593">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="90" y="66" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1592983349593" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1592987456339">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1592987456339" />
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1592962294073">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1592962294073" />
+    <state x="428" y="204" key="git4idea.merge.GitPullDialog" timestamp="1592924774252">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="428" y="204" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1592924774252" />
+    <state x="153" y="183" key="new project wizard" timestamp="1592847956139">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="153" y="183" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1592847956139" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1592850565375">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1592850565375" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1592926770227">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592926770227" />
+  </component>
+</project>
