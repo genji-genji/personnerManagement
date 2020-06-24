@@ -18,8 +18,8 @@ public class StaffController {
     public StaffBean getStaff(@RequestParam (value = "staffId")int staffId){
         return staffService.getStaffMessage(staffId);
         }
-    @RequestMapping(value = "/addStaff",method = RequestMethod.POST)
-    public int
+//    @RequestMapping(value = "/addStaff",method = RequestMethod.POST)
+//    public int
 }
 
 
