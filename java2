@@ -16,7 +16,7 @@ public class School {
 	 student(String name,int studentid,int i,int s){
 		 this.name=name;
 		 this.id=id;
-		 thisidea'=i;
+		 sfclass
 		 this.sstudidea'
 	 }
 	 public String getname() {
