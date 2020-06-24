@@ -15,4 +15,9 @@ public class StaffServiceImpl implements StaffService {
     public StaffBean getStaffMessage(int staffId){
         return staffMapper.getStaff(staffId);
     }
+
+    @Override
+    public int addStaff(StaffBean staffBean){
+        return staffMapper.addStaff(staffBean);
+    }
 }

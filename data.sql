@@ -126,9 +126,10 @@ CREATE TABLE IF NOT EXISTS job_move(
 
 );
 
-select sid,sex,name,BIRTHDAY,ID_NO,origin_name,FORM_name,department_name,job_name
-from staff,origin,FORM,department,job
+select sid,sex,name,BIRTHDAY,ID_NO,origin_name,FORM_name,department_name,job_name,statu_name
+from staff,origin,FORM,department,job,statu
 where staff.origin_id=origin.origin_id AND
 staff.FORM_id=FORM.FORM_id AND 
 staff.department_id=department.department_id AND
-staff.job_id=job.job_id;
+staff.job_id=job.job_id AND
+staff.statu_id=statu.statu_id;

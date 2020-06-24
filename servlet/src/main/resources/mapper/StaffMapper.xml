@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper>
-    <select id="getStaff" parameterType="Integer" resultType="com.example.personnelmanagement.bean.StaffBean">
+<mapper namespace="com.example.personnelmanagement.mapper.StaffMapper">
+    <select id="getStaff" parameterType="int" resultType="com.example.personnelmanagement.bean.StaffBean">
     select sid,sex,name,BIRTHDAY,ID_NO,origin_name,FORM_name,department_name,job_name,statu_name
 from staff,origin,FORM,department,job,statu
 where staff.origin_id=origin.origin_id AND
@@ -10,7 +10,8 @@ staff.department_id=department.department_id AND
 staff.job_id=job.job_id AND staff.statu_id=statu.statu_id
 AND SID= #{staffId}
     </select>
-    <insert id="addStaff">
-
+    <insert id="addStaff" parameterType="com.example.personnelmanagement.bean.StaffBean">
+        insert into staff values (0,#{sex},#{name},#{birthday},#{id_no},#{origin_id},
+        #{form_id},#{department_id},#{job_id},#{statu_id})
     </insert>
 </mapper>
