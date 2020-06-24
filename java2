@@ -7,7 +7,7 @@ public class School {
     	  return scoreLine;
       }
       public  void setscoreLine(int scoreLine) {
-    	  this.scoreLine=scoreLine;
+    	 a'd's'studentid
       }
 }
  class student{
