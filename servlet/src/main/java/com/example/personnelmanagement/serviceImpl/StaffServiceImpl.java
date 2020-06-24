@@ -20,4 +20,9 @@ public class StaffServiceImpl implements StaffService {
     public int addStaff(StaffBean staffBean){
         return staffMapper.addStaff(staffBean);
     }
+
+    @Override
+    public int quitStaff(int staffId){
+        return staffMapper.quitStaff(staffId);
+    }
 }

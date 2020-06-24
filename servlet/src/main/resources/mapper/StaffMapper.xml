@@ -14,4 +14,6 @@ AND SID= #{staffId}
         insert into staff values (0,#{sex},#{name},#{birthday},#{id_no},#{origin_id},
         #{form_id},#{department_id},#{job_id},#{statu_id})
     </insert>
+
+
 </mapper>

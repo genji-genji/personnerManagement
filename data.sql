@@ -126,6 +126,20 @@ CREATE TABLE IF NOT EXISTS job_move(
 
 );
 
+
+delimiter $$
+CREATE procedure insert_staff(IN sid INT,sex varchar(1),name varchar(20),BIRTHDAY DATE,
+ID_NO char(18),origin_id INT,FORM_id INT, department_id INT, job_id INT,statu_id INT)
+begin
+     insert INTO staff values(sid,sex,name,BIRTHDAY,ID_NO,origin_id,FORM_id,department_id,job_id,statu_id); 
+     insert into staff_statu(sid,statu_id,START_TIME) values(sid,statu_id,now());
+end$$
+delimiter ;
+
+call insert_staff(10001,"女",'颜玉书','1995-4-23','430304199504232106',1,2,2,2,2);
+
+
+
 select sid,sex,name,BIRTHDAY,ID_NO,origin_name,FORM_name,department_name,job_name,statu_name
 from staff,origin,FORM,department,job,statu
 where staff.origin_id=origin.origin_id AND
