@@ -2,12 +2,12 @@ package xcw;
 
 public class School {
        static int scoreLine;
-      
+a'da'g'd
       public int getscoreLine() {
     	  return scoreLine;
       }
       public  void setscoreLine(int scoreLine) {
-    	  this.scoreLine=scoreLine;
+    	 a'da'g'dne;
       }
 }
  class student{
