@@ -131,8 +131,16 @@ delimiter $$
 CREATE procedure insert_staff(IN sid INT,sex varchar(1),name varchar(20),BIRTHDAY DATE,
 ID_NO char(18),origin_id INT,FORM_id INT, department_id INT, job_id INT,statu_id INT)
 begin
+declare erro INT;
+declare continue handler for sqlexception set erro=1;
+start transaction;
      insert INTO staff values(sid,sex,name,BIRTHDAY,ID_NO,origin_id,FORM_id,department_id,job_id,statu_id); 
      insert into staff_statu(sid,statu_id,START_TIME) values(sid,statu_id,now());
+     	IF(erro=1) then
+     	rollback;
+     	else
+     	commit;
+     	end IF;
 end$$
 delimiter ;
 

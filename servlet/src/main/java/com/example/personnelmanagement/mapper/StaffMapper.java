@@ -9,4 +9,6 @@ public interface StaffMapper {
     int addStaff(StaffBean staffBean);
 
     int quitStaff(int staffId);
+
+    int getMaxSid();
 }
