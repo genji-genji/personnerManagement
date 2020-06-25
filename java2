@@ -2,12 +2,16 @@ package xcw;
 
 public class School {
        static int scoreLine;
-      
+a'da'g'd
       public int getscoreLine() {
     	  return scoreLine;
       }
       public  void setscoreLine(int scoreLine) {
+<<<<<<< HEAD
     	 a'd's'studentid
+=======
+    	 a'da'g'dne;
+>>>>>>> 8d7ace1d317eb7b2f4ee73cf450443234f295e15
       }
 }
  class student{
@@ -16,8 +20,13 @@ public class School {
 	 student(String name,int studentid,int i,int s){
 		 this.name=name;
 		 this.id=id;
+<<<<<<< HEAD
 		 sfclass
 		 g'd'f'g'studentname
+=======
+		 thisidea'=i;
+		 asd
+>>>>>>> 8d7ace1d317eb7b2f4ee73cf450443234f295e15
 	 }
 	 public String getname() {
 		 s'System;		 
