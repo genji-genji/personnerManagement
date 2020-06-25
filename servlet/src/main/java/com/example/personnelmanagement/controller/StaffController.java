@@ -25,6 +25,7 @@ public class StaffController {
         StaffBean staffBean=new StaffBean(sid,sex,name,birthday,id_no,origin_id,form_id,department_id,job_id,statu_id);
 
         int result=staffService.addStaff(staffBean);
+//
         if (result==1){
             return new MessageBean("succes","添加成功");
         }
@@ -32,6 +33,19 @@ public class StaffController {
             return new MessageBean("erro","添加失败");
         }
     }
+    //员工离职
+    @RequestMapping(value ="/quitStaff",method = RequestMethod.POST)
+    public MessageBean quitStaff(int sid){
+        int result=staffService.quitStaff(sid);
+
+        if (result==1){
+            return new MessageBean("succes","添加成功");
+        }
+        else {
+            return new MessageBean("erro","添加失败");
+        }
+    }
+
 
 }
 

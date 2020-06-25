@@ -11,4 +11,6 @@ public interface StaffMapper {
     int quitStaff(int staffId);
 
     int getMaxSid();
+
+    int getStaffNum();
 }

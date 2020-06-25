@@ -9,5 +9,6 @@ public interface StaffService {
     StaffBean getStaffMessage(int staffId);
     int addStaff(StaffBean staffBean);
     int getMaxSid();
+    int getStaffNum();
     int quitStaff(int staffId);
 }

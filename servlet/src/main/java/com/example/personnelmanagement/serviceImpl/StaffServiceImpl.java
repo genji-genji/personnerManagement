@@ -18,7 +18,18 @@ public class StaffServiceImpl implements StaffService {
 
     @Override
     public int addStaff(StaffBean staffBean){
-        return staffMapper.addStaff(staffBean);
+        int num1=staffMapper.getStaffNum();
+        int num2;
+        int jage=0;
+
+        staffMapper.addStaff(staffBean);
+        num2=staffMapper.getStaffNum();
+
+        if (num2>num1){
+            jage=1;
+        }
+//        num2>num1即数据增加 添加成功
+        return jage;
     }
 
     @Override
@@ -27,4 +38,6 @@ public class StaffServiceImpl implements StaffService {
     }
     @Override
     public int getMaxSid(){return staffMapper.getMaxSid();}
+    @Override
+    public int getStaffNum(){return  staffMapper.getStaffNum();}
 }
