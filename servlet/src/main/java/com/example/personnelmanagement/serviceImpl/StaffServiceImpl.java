@@ -25,4 +25,6 @@ public class StaffServiceImpl implements StaffService {
     public int quitStaff(int staffId){
         return staffMapper.quitStaff(staffId);
     }
+    @Override
+    public int getMaxSid(){return staffMapper.getMaxSid();}
 }
