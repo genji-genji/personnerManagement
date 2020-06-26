@@ -19,7 +19,8 @@ public class getDepartmentTest {
     public void test() {
         DepartmentBean departmentBean = departmentService.getDepartment_id(1);
         System.out.println(123);
-        System.out.println(departmentBean.getDepartment_name());
+        System.out.println(departmentBean);
+
     }
 }
 

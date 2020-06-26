@@ -24,6 +24,21 @@ public class DepartmentServiceImpl implements DepartmentService {
     }
 
     @Override
+    public DepartmentBean getDepartment_type(String department_type) {
+        return departmentMapper.getDepartment_type(department_type);
+    }
+
+    @Override
+    public DepartmentBean getDepartment_phone(int department_phone) {
+        return departmentMapper.getDepartment_phone(department_phone);
+    }
+
+    @Override
+    public DepartmentBean getDepartment_bt(int department_bt) {
+        return departmentMapper.getDepartment_bt(department_bt);
+    }
+
+    @Override
     public int addDepartment(DepartmentBean departmentBean) {
         // int temp;
         // departmentBean.setDepartment_id(departmentMapper.getMaxId()+1);

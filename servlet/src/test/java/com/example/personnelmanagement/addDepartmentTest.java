@@ -19,7 +19,7 @@ public class addDepartmentTest {
 
     @Test
     public void addDepartmentTest(){
-        DepartmentBean departmentBean = new DepartmentBean(4,"孵化池");
+        DepartmentBean departmentBean = new DepartmentBean(4,"孵化池","department",156234853,20170604);
         System.out.println(departmentService.addDepartment(departmentBean));
 
     }
