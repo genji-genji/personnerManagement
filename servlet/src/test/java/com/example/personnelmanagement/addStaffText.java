@@ -18,7 +18,6 @@ public class addStaffText {
     @Test
     public void addStaffTest(){
         StaffBean staffBean=new StaffBean(0,"女","颜玉书","1995-4-27","478658199504273075",1,2,2,1,2);
-        staffBean.setSid(staffService.getMaxSid()+1);
         System.out.println(staffService.addStaff(staffBean));
     }
 }

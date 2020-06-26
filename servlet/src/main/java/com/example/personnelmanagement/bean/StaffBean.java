@@ -1,21 +1,23 @@
 package com.example.personnelmanagement.bean;
 
 public class StaffBean {
-    private int sid;
-    private String sex;
-    private String name;
-    private String birthday;
-    private String id_no;
-    private int department_id;
-    private String department_name;
-    private int job_id;
-    private String job_name;
-    private int form_id;
-    private String form_name;
-    private int origin_id;
-    private String origin_name;
-    private int statu_id;
-    private String statu_name;
+    private int sid;  //id
+    private String sex; //性别
+    private String name; //姓名
+    private String birthday; //出生日期
+    private String id_no; //身份证号
+    private int department_id; //部门id
+    private String department_name; //部门名
+    private int job_id; //岗位id
+    private String job_name; //岗位名
+    private int form_id; //入工形式id
+    private String form_name; //入工形式名
+    private int origin_id; //招聘方式id
+    private String origin_name; //招聘方式
+    private int statu_id; //状态码
+    private String statu_name; //状态名
+    private int last; //试用期长度
+    private int jage; //插入，更新，删除，返回判断码
 
     public StaffBean(int sid,String sex,String name,String birthday,String id_no,
                      int origin_id,int form_id,int department_id,int job_id,int statu_id){
@@ -29,6 +31,22 @@ public class StaffBean {
         this.department_id=department_id;
         this.job_id=job_id;
         this.statu_id=statu_id;
+
+    }
+
+    public StaffBean(int sid,String sex,String name,String birthday,String id_no,
+                     int origin_id,int form_id,int department_id,int job_id,int statu_id,int last){
+        this.sid=sid;
+        this.sex=sex;
+        this.name=name;
+        this.birthday=birthday;
+        this.id_no=id_no;
+        this.origin_id=origin_id;
+        this.form_id=form_id;
+        this.department_id=department_id;
+        this.job_id=job_id;
+        this.statu_id=statu_id;
+        this.last=last;
 
     }
     public StaffBean(){
@@ -154,6 +172,23 @@ public class StaffBean {
     public void setStatu_name(String statu_name) {
         this.statu_name = statu_name;
     }
+
+    public int getJage() {
+        return jage;
+    }
+
+    public void setJage(int jage) {
+        this.jage = jage;
+    }
+
+    public int getLast() {
+        return last;
+    }
+
+    public void setLast(int last) {
+        this.last = last;
+    }
+
     @Override
     public String toString(){
         return ""+this.sid+" "+this.sex+" "+this.name+""+this.origin_name;

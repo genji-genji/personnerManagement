@@ -39,11 +39,16 @@ insert into statu values(3,'离职');
 
 CREATE TABLE IF NOT EXISTS department(
 	department_id INT PRIMARY key,
-	department_name VARCHAR(15)
+	department_name VARCHAR(15) NOT NULL,
+        department_type VARCHAR(10) NOT NULL,
+	department_phone int(11),
+	department_bt int(11)
 	);
 
-insert into department values(1,"人事部");
-insert into department values(2,"战忽部");
+ALTER TABLE department add check(department_type in ('company','department'));
+
+-- insert into department() values(1,"人事部");
+-- insert into department values(2,"战忽部");
 
 CREATE TABLE IF NOT EXISTS job(
 	job_id INT PRIMARY key,
@@ -131,12 +136,14 @@ delimiter $$
 CREATE procedure insert_staff(IN sid INT,sex varchar(1),name varchar(20),BIRTHDAY DATE,
 ID_NO char(18),origin_id INT,FORM_id INT, department_id INT, job_id INT,statu_id INT)
 begin
-declare erro INT;
-declare continue handler for sqlexception set erro=1;
+declare erro INT ;
+declare continue handler for sqlexception set erro=0;
 start transaction;
+
+     set erro=1;
      insert INTO staff values(sid,sex,name,BIRTHDAY,ID_NO,origin_id,FORM_id,department_id,job_id,statu_id); 
      insert into staff_statu(sid,statu_id,START_TIME) values(sid,statu_id,now());
-     	IF(erro=1) then
+     	IF(erro=0) then
      	rollback;
      	else
      	commit;
@@ -147,6 +154,29 @@ delimiter ;
 call insert_staff(10001,"女",'颜玉书','1995-4-23','430304199504232106',1,2,2,2,2);
 
 
+delimiter $$
+CREATE procedure quit_staff(IN SID INT)
+begin
+declare erro INT ;
+declare continue handler for sqlexception set erro =0;
+start transaction;
+set erro=1;
+
+update  staff a set a.statu_id=3 where a.sid=SID;
+update  staff_statu a set a.END_TIME=now() where a.END_TIME is NULL AND a.sid=SID;
+insert into staff_statu(sid,statu_id,START_TIME) values(sid,3,now());
+	IF(erro=0) then
+	rollback;
+	else
+	commit;
+	end IF;
+
+end$$
+delimiter ;
+
+
+
+
 
 select sid,sex,name,BIRTHDAY,ID_NO,origin_name,FORM_name,department_name,job_name,statu_name
 from staff,origin,FORM,department,job,statu
@@ -155,3 +185,6 @@ staff.FORM_id=FORM.FORM_id AND
 staff.department_id=department.department_id AND
 staff.job_id=job.job_id AND
 staff.statu_id=statu.statu_id;
+
+delete from staff where sid = 10001;
+delete from staff_statu where sid=10001;

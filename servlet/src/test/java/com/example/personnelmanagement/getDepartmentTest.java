@@ -1,9 +1,7 @@
 package com.example.personnelmanagement;
 
-import com.example.personnelmanagement.bean.StaffBean;
-import com.example.personnelmanagement.bean.UserBean;
-import com.example.personnelmanagement.service.StaffService;
-import com.example.personnelmanagement.service.UserService;
+import com.example.personnelmanagement.bean.DepartmentBean;
+import com.example.personnelmanagement.service.DepartmentService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,11 +13,14 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class getDepartmentTest {
 
     @Autowired
-    StaffService staffService;
+    DepartmentService departmentService;
 
     @Test
     public void test() {
-        StaffBean staffBean = staffService.getDepartment(2);
-        System.out.println(staffBean);
+        DepartmentBean departmentBean = departmentService.getDepartment_id(1);
+        System.out.println(123);
+        System.out.println(departmentBean);
+
     }
 }
+
