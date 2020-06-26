@@ -8,6 +8,7 @@ public interface StaffMapper {
     StaffBean getStaff(int staffId);
 //   添加员工
     int addStaff(StaffBean staffBean);
+    int addStaffHasT(StaffBean staffBean);
 
     int quitStaff(StaffBean staffBean);
 

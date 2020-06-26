@@ -33,6 +33,22 @@ public class StaffBean {
         this.statu_id=statu_id;
 
     }
+
+    public StaffBean(int sid,String sex,String name,String birthday,String id_no,
+                     int origin_id,int form_id,int department_id,int job_id,int statu_id,int last){
+        this.sid=sid;
+        this.sex=sex;
+        this.name=name;
+        this.birthday=birthday;
+        this.id_no=id_no;
+        this.origin_id=origin_id;
+        this.form_id=form_id;
+        this.department_id=department_id;
+        this.job_id=job_id;
+        this.statu_id=statu_id;
+        this.last=last;
+
+    }
     public StaffBean(){
 
     }

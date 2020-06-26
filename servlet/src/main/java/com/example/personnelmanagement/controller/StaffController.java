@@ -24,7 +24,17 @@ public class StaffController {
                                 int origin_id,int form_id,int department_id,int job_id,int statu_id){
         StaffBean staffBean=new StaffBean(sid,sex,name,birthday,id_no,origin_id,form_id,department_id,job_id,statu_id);
 
-        int result=staffService.addStaff(staffBean);
+        int result;
+        //无试用期入职
+        if (statu_id == 2) {
+
+
+            result = staffService.addStaff(staffBean);
+        }
+        //试用期入职
+        else {
+            result = staffService.addStaffHasT(staffBean);
+        }
 //
         if (result==1){
             return new MessageBean("succes","添加成功");

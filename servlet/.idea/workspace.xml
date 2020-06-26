@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53865a65-c69e-488c-b2b2-eed6605c79ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/personnelmanagement/addStaffHasTTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dc5d6b38-97a2-4e8e-b2c8-0ca13081b292.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dc5d6b38-97a2-4e8e-b2c8-0ca13081b292.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/bean/StaffBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/bean/StaffBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/StaffBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/StaffBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/StaffController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/StaffController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/StaffMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/StaffMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/StaffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/StaffService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/StaffServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/StaffServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/controller/StaffController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/controller/StaffController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/mapper/StaffMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/mapper/StaffMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/service/StaffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/service/StaffService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/serviceImpl/StaffServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/serviceImpl/StaffServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/StaffMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StaffMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/personnelmanagement/addStaffText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/personnelmanagement/addStaffText.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +128,22 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
-  <component name="RunManager" selected="JUnit.quitStaffText">
+  <component name="RunManager" selected="JUnit.addStaffHasTTest">
+    <configuration name="addStaffHasTTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="servlet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.personnelmanagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.personnelmanagement" />
+      <option name="MAIN_CLASS_NAME" value="com.example.personnelmanagement.addStaffHasTTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="addStaffText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="servlet" />
       <extension name="coverage">
@@ -212,6 +230,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.addStaffHasTTest" />
         <item itemvalue="JUnit.quitStaffText" />
         <item itemvalue="JUnit.addStaffText" />
         <item itemvalue="JUnit.getStaffText" />
@@ -239,11 +258,6 @@
                 <item name="root:MySQL - personnelmanagement@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="com.intellij.database.console.session.MessageBusSession@3d77392e" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:MySQL - personnelmanagement@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@5e282d83" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -264,7 +278,7 @@
       <workItem from="1592822833504" duration="19573000" />
       <workItem from="1592883937969" duration="19241000" />
       <workItem from="1592962234069" duration="19103000" />
-      <workItem from="1593143525529" duration="6934000" />
+      <workItem from="1593143525529" duration="8974000" />
     </task>
     <task id="LOCAL-00001" summary="StaffBean">
       <created>1592915748024</created>
@@ -350,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593150968292</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update staffmapper">
+      <created>1593152691121</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1593152691121</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,10 +412,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="328" y="148" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1592846609752" />
-    <state x="113" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1593152624165">
+    <state x="113" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1593153367400">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="113" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593152624165" />
+    <state x="113" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593153367400" />
     <state x="491" y="615" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592847148549">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -407,34 +428,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="344" y="62" key="#connectTest.contextLoads/0.0.1536.824@0.0.1536.824" timestamp="1592850666640" />
-    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1593150965326">
+    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1593154873079">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593150965326" />
-    <state x="550" y="104" key="ExecutionTargetDialog" timestamp="1593149560119">
+    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593154873079" />
+    <state x="550" y="104" key="ExecutionTargetDialog" timestamp="1593154137312">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="550" y="104" key="ExecutionTargetDialog/0.0.1536.824@0.0.1536.824" timestamp="1593149560119" />
+    <state x="550" y="104" key="ExecutionTargetDialog/0.0.1536.824@0.0.1536.824" timestamp="1593154137312" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1592979570744">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592979570744" />
-    <state width="1250" height="259" key="GridCell.Tab.0.bottom" timestamp="1593149837656">
+    <state width="1250" height="259" key="GridCell.Tab.0.bottom" timestamp="1593154137288">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1250" height="259" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593149837656" />
-    <state width="1250" height="259" key="GridCell.Tab.0.center" timestamp="1593149837656">
+    <state width="1250" height="259" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593154137288" />
+    <state width="1250" height="259" key="GridCell.Tab.0.center" timestamp="1593154137288">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1250" height="259" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593149837656" />
-    <state width="1250" height="259" key="GridCell.Tab.0.left" timestamp="1593149837656">
+    <state width="1250" height="259" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593154137288" />
+    <state width="1250" height="259" key="GridCell.Tab.0.left" timestamp="1593154137288">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1250" height="259" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593149837656" />
-    <state width="1250" height="259" key="GridCell.Tab.0.right" timestamp="1593149837656">
+    <state width="1250" height="259" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593154137288" />
+    <state width="1250" height="259" key="GridCell.Tab.0.right" timestamp="1593154137288">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1250" height="259" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593149837656" />
+    <state width="1250" height="259" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593154137288" />
     <state width="1253" height="262" key="GridCell.Tab.1.bottom" timestamp="1592990216635">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

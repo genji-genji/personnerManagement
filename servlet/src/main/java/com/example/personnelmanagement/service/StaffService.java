@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 public interface StaffService {
     StaffBean getStaffMessage(int staffId);
     int addStaff(StaffBean staffBean);
+    int addStaffHasT(StaffBean staffBean);
     int getMaxSid();
     int getStaffNum();
     int quitStaff(StaffBean staffBean);

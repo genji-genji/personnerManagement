@@ -19,16 +19,22 @@ public class StaffServiceImpl implements StaffService {
 
     @Override
     public int addStaff(StaffBean staffBean){
-        int num1=staffMapper.getStaffNum();
-        int num2;
         int jage;
-
+        staffBean.setSid(staffMapper.getMaxSid()+1);
         staffMapper.addStaff(staffBean);
         jage=staffBean.getJage();
         return jage;
     }
 
-//    jage表示操作是否成功
+    @Override
+    public int addStaffHasT(StaffBean staffBean) {
+        staffBean.setSid(staffMapper.getMaxSid()+1);
+        staffMapper.addStaffHasT(staffBean);
+        int jage = staffBean.getJage();
+        return jage;
+    }
+
+    //    jage表示操作是否成功
     @Override
     public int quitStaff(StaffBean staffBean){
         staffMapper.quitStaff(staffBean);

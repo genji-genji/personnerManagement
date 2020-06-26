@@ -16,6 +16,12 @@ AND SID= #{staffId}
         #{jage,mode=OUT,jdbcType=INTEGER})
         }
     </insert>
+    <insert id="addStaffHasT" parameterType="com.example.personnelmanagement.bean.StaffBean" statementType="CALLABLE">
+        {
+        CALL insert_staff_with_test(#{sid},#{sex},#{name},#{birthday},#{id_no},#{origin_id},#{form_id},#{department_id},#{job_id},#{statu_id},
+        #{last},#{jage,mode=OUT,jdbcType=INTEGER})
+        }
+    </insert>
     <select id="getMaxSid" resultType="int">
         select MAX(SID) from staff
     </select>
