@@ -39,8 +39,13 @@ insert into statu values(3,'离职');
 
 CREATE TABLE IF NOT EXISTS department(
 	department_id INT PRIMARY key,
-	department_name VARCHAR(15)
+	department_name VARCHAR(15) NOT NULL,
+        department_type VARCHAR(10) NOT NULL,
+	department_phone int(11),
+	department_bt int(11)
 	);
+
+ALTER TABLE department add check(department_type in ('company','department'));
 
 insert into department values(1,"人事部");
 insert into department values(2,"战忽部");
