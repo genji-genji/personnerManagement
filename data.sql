@@ -47,8 +47,8 @@ CREATE TABLE IF NOT EXISTS department(
 
 ALTER TABLE department add check(department_type in ('company','department'));
 
-insert into department values(1,"人事部");
-insert into department values(2,"战忽部");
+-- insert into department() values(1,"人事部");
+-- insert into department values(2,"战忽部");
 
 CREATE TABLE IF NOT EXISTS job(
 	job_id INT PRIMARY key,
