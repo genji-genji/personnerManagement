@@ -7,6 +7,8 @@ import com.example.personnelmanagement.service.StaffService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class StaffServiceImpl implements StaffService {
     @Autowired
@@ -15,6 +17,11 @@ public class StaffServiceImpl implements StaffService {
     @Override
     public StaffBean getStaffMessage(int staffId){
         return staffMapper.getStaff(staffId);
+    }
+
+    @Override
+    public List<StaffBean> getStaffList() {
+        return staffMapper.getStaffList();
     }
 
     @Override

@@ -4,11 +4,12 @@
     <select id="getStaff" parameterType="int" resultType="com.example.personnelmanagement.bean.StaffBean">
     select sid,sex,name,BIRTHDAY,ID_NO,origin_name,form_name,department_name,job_name,statu_name
 from staff,origin,FORM,department,job,statu
-where staff.origin_id=origin.origin_id AND
-staff.FORM_id=FORM.FORM_id AND
-staff.department_id=department.department_id AND
-staff.job_id=job.job_id AND staff.statu_id=statu.statu_id
+where
 AND SID= #{staffId}
+    </select>
+    <select id="getStaffList" resultType="com.example.personnelmanagement.bean.StaffBean">
+        select sid,sex,name,BIRTHDAY,ID_NO,origin_name,form_name,department_name,job_name,statu_name
+        from staff
     </select>
     <insert id="addStaff" parameterType="com.example.personnelmanagement.bean.StaffBean"  statementType="CALLABLE" >
         {

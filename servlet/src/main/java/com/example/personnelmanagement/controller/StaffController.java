@@ -10,15 +10,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.List;
+
 @Controller
 public class StaffController {
 
     @Autowired
     private StaffService staffService;
+
     @RequestMapping(value = "/serchStaff",method = RequestMethod.GET)
-    public StaffBean getStaff(@RequestParam (value = "staffId")int staffId){
+    public StaffBean getStaff(@RequestParam (value = "staffId")int staffId) {
         return staffService.getStaffMessage(staffId);
-        }
+    }
+
+    @RequestMapping(value = "/getStaffList",method = RequestMethod.GET)
+    public List<StaffBean> getStaffList(){
+        return staffService.getStaffList();
+    }
+
     @RequestMapping(value = "/addStaff",method = RequestMethod.POST)
     public MessageBean addStaff(int sid,String sex,String name,String birthday,String id_no,
                                 int origin_id,int form_id,int department_id,int job_id,int statu_id){
