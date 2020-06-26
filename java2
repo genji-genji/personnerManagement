@@ -4,7 +4,7 @@ public class School {
        static int scoreLine;
 a'da'g'd
       public int getscoreLine() {
-    	  return scoreLine;
+    	  adadaad
       }
       public  void setscoreLine(int scoreLine) {
 <<<<<<< HEAD
