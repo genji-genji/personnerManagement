@@ -37,10 +37,10 @@ public class StaffController {
         }
 //
         if (result==1){
-            return new MessageBean("succes","添加成功");
+            return new MessageBean("success","添加成功");
         }
         else {
-            return new MessageBean("erro","添加失败");
+            return new MessageBean("error","添加失败");
         }
     }
     //员工离职
@@ -49,10 +49,10 @@ public class StaffController {
         int result=staffService.quitStaff(staffBean);
 
         if (result==1){
-            return new MessageBean("succes","添加成功");
+            return new MessageBean("success","添加成功");
         }
         else {
-            return new MessageBean("erro","添加失败");
+            return new MessageBean("error","添加失败");
         }
     }
 

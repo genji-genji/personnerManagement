@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.personnelmanagement.mapper.DepartmentMapper">
+    <select id="getDepartment_id" parameterType="int" resultType="com.example.personnelmanagement.bean.DepartmentBean">
+        select department_id,department_name
+        from department
+        where department_id = #{department_id}
+    </select>
+
+    <insert id="addDepartment" parameterType="com.example.personnelmanagement.bean.DepartmentBean">
+        insert into department values
+        (#{department_id},#{department_name})
+    </insert>
+
+    <select id="getMaxId" parameterType="int" resultType="com.example.personnelmanagement.bean.DepartmentBean">
+          select Max(department_id) from department
+    </select>
+</mapper>
