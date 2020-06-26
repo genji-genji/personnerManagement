@@ -17,17 +17,17 @@ public class StaffController {
 
     @Autowired
     private StaffService staffService;
-
+//根据员工号获得员工信息
     @RequestMapping(value = "/serchStaff",method = RequestMethod.GET)
     public StaffBean getStaff(@RequestParam (value = "staffId")int staffId) {
         return staffService.getStaffMessage(staffId);
     }
-
+//获得全体员工表
     @RequestMapping(value = "/getStaffList",method = RequestMethod.GET)
     public List<StaffBean> getStaffList(){
         return staffService.getStaffList();
     }
-
+//员工入职
     @RequestMapping(value = "/addStaff",method = RequestMethod.POST)
     public MessageBean addStaff(int sid,String sex,String name,String birthday,String id_no,
                                 int origin_id,int form_id,int department_id,int job_id,int statu_id){
@@ -52,6 +52,20 @@ public class StaffController {
             return new MessageBean("error","添加失败");
         }
     }
+
+//    修改员工个人信息
+    @RequestMapping(value = "/changeStaffMsg",method = RequestMethod.POST)
+    public MessageBean changeStaffMsg(int sid){
+        int result = staffService.changeStaffMsg(sid);
+
+        if (result==1){
+            return new MessageBean("success","添加成功");
+        }
+        else {
+            return new MessageBean("error","添加失败");
+        }
+    }
+
     //员工离职
     @RequestMapping(value ="/quitStaff",method = RequestMethod.POST)
     public MessageBean quitStaff(StaffBean staffBean){

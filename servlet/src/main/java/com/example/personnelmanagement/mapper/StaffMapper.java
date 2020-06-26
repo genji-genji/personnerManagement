@@ -18,4 +18,6 @@ public interface StaffMapper {
     int getMaxSid();
 
     int getStaffNum();
+
+    int changeStaffMsg(int staffId);
 }

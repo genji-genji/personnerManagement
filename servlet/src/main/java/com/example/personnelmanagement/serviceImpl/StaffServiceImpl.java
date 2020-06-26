@@ -25,6 +25,11 @@ public class StaffServiceImpl implements StaffService {
     }
 
     @Override
+    public int changeStaffMsg(int staffId) {
+        return staffMapper.changeStaffMsg(staffId);
+    }
+
+    @Override
     public int addStaff(StaffBean staffBean){
         int jage;
         staffBean.setSid(staffMapper.getMaxSid()+1);
