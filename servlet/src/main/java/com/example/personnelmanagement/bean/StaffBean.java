@@ -16,6 +16,7 @@ public class StaffBean {
     private String origin_name;
     private int statu_id;
     private String statu_name;
+    private int jage;
 
     public StaffBean(int sid,String sex,String name,String birthday,String id_no,
                      int origin_id,int form_id,int department_id,int job_id,int statu_id){
@@ -154,6 +155,15 @@ public class StaffBean {
     public void setStatu_name(String statu_name) {
         this.statu_name = statu_name;
     }
+
+    public int getJage() {
+        return jage;
+    }
+
+    public void setJage(int jage) {
+        this.jage = jage;
+    }
+
     @Override
     public String toString(){
         return ""+this.sid+" "+this.sex+" "+this.name+""+this.origin_name;

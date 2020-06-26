@@ -35,8 +35,8 @@ public class StaffController {
     }
     //员工离职
     @RequestMapping(value ="/quitStaff",method = RequestMethod.POST)
-    public MessageBean quitStaff(int sid){
-        int result=staffService.quitStaff(sid);
+    public MessageBean quitStaff(StaffBean staffBean){
+        int result=staffService.quitStaff(staffBean);
 
         if (result==1){
             return new MessageBean("succes","添加成功");

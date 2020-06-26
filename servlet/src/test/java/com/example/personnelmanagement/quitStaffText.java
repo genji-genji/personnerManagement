@@ -1,5 +1,6 @@
 package com.example.personnelmanagement;
 
+import com.example.personnelmanagement.bean.StaffBean;
 import com.example.personnelmanagement.service.StaffService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,6 +15,9 @@ public class quitStaffText {
     StaffService staffService;
     @Test
     public void test(){
-        staffService.quitStaff(10001);
+
+        StaffBean staffBean =new StaffBean();
+        staffBean.setSid(10001);
+       System.out.println(staffService.quitStaff(staffBean));
     }
 }

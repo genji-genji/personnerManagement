@@ -1129,7 +1129,7 @@
     <table id="290" parent="6" name="test_use"/>
     <table id="291" parent="6" name="user"/>
     <routine id="292" parent="6" name="insert_staff">
-      <SourceTextLength>382</SourceTextLength>
+      <SourceTextLength>370</SourceTextLength>
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
     </routine>
@@ -1139,7 +1139,7 @@
       <RoutineKind>procedure</RoutineKind>
     </routine>
     <routine id="294" parent="6" name="quit_staff">
-      <SourceTextLength>422</SourceTextLength>
+      <SourceTextLength>399</SourceTextLength>
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
     </routine>
@@ -1567,13 +1567,23 @@ START_TIME</ColNames>
       <Position>10</Position>
       <DataType>int(11)|0s</DataType>
     </argument>
-    <argument id="376" parent="293" name="v_succ">
+    <argument id="376" parent="292" name="erro">
+      <Position>11</Position>
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>int(11)|0s</DataType>
+    </argument>
+    <argument id="377" parent="293" name="v_succ">
       <Position>1</Position>
       <ArgumentDirection>O</ArgumentDirection>
       <DataType>tinyint(4)|0s</DataType>
     </argument>
-    <argument id="377" parent="294" name="SID">
+    <argument id="378" parent="294" name="erro">
       <Position>1</Position>
+      <ArgumentDirection>O</ArgumentDirection>
+      <DataType>int(11)|0s</DataType>
+    </argument>
+    <argument id="379" parent="294" name="SID">
+      <Position>2</Position>
       <DataType>int(11)|0s</DataType>
     </argument>
   </database-model>

@@ -11,7 +11,10 @@ staff.job_id=job.job_id AND staff.statu_id=statu.statu_id
 AND SID= #{staffId}
     </select>
     <insert id="addStaff" parameterType="com.example.personnelmanagement.bean.StaffBean"  statementType="CALLABLE" >
-        {CALL insert_staff(#{sid},#{sex},#{name},#{birthday},#{id_no},#{origin_id},#{form_id},#{department_id},#{job_id},#{statu_id})}
+        {
+        CALL insert_staff(#{sid},#{sex},#{name},#{birthday},#{id_no},#{origin_id},#{form_id},#{department_id},#{job_id},#{statu_id},
+        #{jage,mode=OUT,jdbcType=INTEGER})
+        }
     </insert>
     <select id="getMaxSid" resultType="int">
         select MAX(SID) from staff
@@ -19,8 +22,11 @@ AND SID= #{staffId}
     <select id="getStaffNum" resultType="int">
         select count(*) from staff
     </select>
-    <update id="quitStaff" parameterType="int" statementType="CALLABLE">
-        {call quit_staff(#{sid})}
+<!--    <update id="quitStaff" parameterType="int" statementType="CALLABLE">-->
+<!--        {call quit_staff(#{sid})}-->
+<!--    </update>-->
+    <update id="quitStaff" parameterType="com.example.personnelmanagement.bean.StaffBean" statementType="CALLABLE" >
+        {call quit_staff(#{jage,mode=OUT,jdbcType=INTEGER},#{sid})}
     </update>
 
 
