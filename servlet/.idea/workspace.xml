@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53865a65-c69e-488c-b2b2-eed6605c79ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dc5d6b38-97a2-4e8e-b2c8-0ca13081b292.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dc5d6b38-97a2-4e8e-b2c8-0ca13081b292.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/bean/StaffBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/bean/StaffBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/controller/StaffController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/controller/StaffController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/mapper/StaffMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/mapper/StaffMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/service/StaffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/service/StaffService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/serviceImpl/StaffServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/serviceImpl/StaffServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/StaffMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StaffMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/personnelmanagement/getDepartmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/personnelmanagement/getDepartmentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/personnelmanagement/quitStaffText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/personnelmanagement/quitStaffText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/StaffMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/StaffMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/StaffBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/StaffBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/StaffController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/StaffController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/StaffMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/StaffMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/StaffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/StaffService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/StaffServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/StaffServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +56,14 @@
         <item name="personnelmanagement: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="staff_statu: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - personnelmanagement@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="personnelmanagement: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="test_use: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -240,11 +244,6 @@
                 <item name="root:MySQL - personnelmanagement@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="com.intellij.database.console.session.MessageBusSession@5e282d83" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:MySQL - personnelmanagement@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@8f0939e" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -265,7 +264,7 @@
       <workItem from="1592822833504" duration="19573000" />
       <workItem from="1592883937969" duration="19241000" />
       <workItem from="1592962234069" duration="19103000" />
-      <workItem from="1593143525529" duration="5158000" />
+      <workItem from="1593143525529" duration="6934000" />
     </task>
     <task id="LOCAL-00001" summary="StaffBean">
       <created>1592915748024</created>
@@ -344,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593101899513</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update staffmapper">
+      <created>1593150968292</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1593150968292</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +371,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="StaffBean" />
-    <option name="LAST_COMMIT_MESSAGE" value="StaffBean" />
+    <MESSAGE value="update staffmapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="update staffmapper" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="84" key="#Project_Structure" timestamp="1592829050907">
@@ -384,10 +391,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="328" y="148" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1592846609752" />
-    <state x="113" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1593147944771">
+    <state x="113" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1593152624165">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="113" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593147944771" />
+    <state x="113" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593152624165" />
     <state x="491" y="615" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592847148549">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -400,10 +407,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="344" y="62" key="#connectTest.contextLoads/0.0.1536.824@0.0.1536.824" timestamp="1592850666640" />
-    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1593150953257">
+    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1593150965326">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593150953257" />
+    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593150965326" />
     <state x="550" y="104" key="ExecutionTargetDialog" timestamp="1593149560119">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -468,10 +475,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="90" y="66" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1592983349593" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1593101963646">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1593150975296">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1593101963646" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1593150975296" />
     <state x="548" y="236" width="439" height="344" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1593088818469">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
