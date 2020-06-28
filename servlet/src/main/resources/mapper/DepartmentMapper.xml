@@ -24,4 +24,8 @@
         department_bt = #{department_bt}
         where department_id = #{department_id}
     </select>
+    <select id="deleteDepartment" parameterType="com.example.personnelmanagement.bean.DepartmentBean">
+        delete from department
+        where department_id = #{department_id};
+    </select>
 </mapper>

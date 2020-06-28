@@ -51,6 +51,11 @@ public class DepartmentServiceImpl implements DepartmentService {
     public DepartmentBean changeDepartment(int department_id, String department_name, String department_type, int department_phone, int department_bt ){
         return departmentMapper.changeDepartment(department_id,department_name,department_type,department_phone,department_bt);
     }
+    @Override
+    public DepartmentBean deleteDepartment(int department_id) {
+        return departmentMapper.deleteDepartment(department_id);
+    }
+
 
 
 }
