@@ -15,7 +15,7 @@ g'd'd'fa'da'g'dne;
       }
 }
  class student{
-	  String name;
+	  bjhgy
 	  int id,i,s;
 	 student(String name,int studentid,int i,int s){
 		 this.name=name;
