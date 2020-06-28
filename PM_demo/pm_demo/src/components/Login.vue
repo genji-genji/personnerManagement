@@ -49,10 +49,14 @@ export default {
             // console.log(this)
         },
         login(){
-            // this.$refs.loginRef.validate(valid => {
-            //     if(!valid) return;
-            // 编程式导航跳转
+            //  this.$refs.loginRef.validate(async valid => {
+            //      if(!valid) return;
+            //      const {data: res} =await this.$http.post("login",this.loginform);
+            //      console.log(res)
+            // // 编程式导航跳转
             this.$router.push("/home");
+            //  });
+
         }
     }
 }
