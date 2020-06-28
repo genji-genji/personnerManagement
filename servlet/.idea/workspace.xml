@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53865a65-c69e-488c-b2b2-eed6605c79ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dc5d6b38-97a2-4e8e-b2c8-0ca13081b292.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dc5d6b38-97a2-4e8e-b2c8-0ca13081b292.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dc5d6b38-97a2-4e8e-b2c8-0ca13081b292/storage_v2/_src_/schema/mysqldb.oCwLWw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dc5d6b38-97a2-4e8e-b2c8-0ca13081b292/storage_v2/_src_/schema/mysqldb.oCwLWw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dc5d6b38-97a2-4e8e-b2c8-0ca13081b292/storage_v2/_src_/schema/test.kkQ2AA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dc5d6b38-97a2-4e8e-b2c8-0ca13081b292/storage_v2/_src_/schema/test.kkQ2AA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/DepartmentBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/JobBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/jobController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/DepartmentMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/jobMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/DepartmentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/JobService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/DepartmentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/JobServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/DepartmentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/JobMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/personnelmanagement/addDepartmentTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/personnelmanagement/getDepartmentTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/personnelmanagement/getDepartmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/personnelmanagement/getDepartmentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/StaffController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/StaffController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/StaffMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/StaffMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/StaffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/StaffService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/StaffServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/StaffServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/StaffMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/StaffMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +242,7 @@
       <workItem from="1593155526852" duration="4548000" />
       <workItem from="1593161735073" duration="2401000" />
       <workItem from="1593270086325" duration="245000" />
-      <workItem from="1593331566130" duration="4065000" />
+      <workItem from="1593331566130" duration="4319000" />
     </task>
     <task id="LOCAL-00001" summary="StaffBean">
       <created>1592915748024</created>
@@ -382,7 +384,21 @@
       <option name="project" value="LOCAL" />
       <updated>1593173189996</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="update staffmapper">
+      <created>1593336737252</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1593336737252</updated>
+    </task>
+    <task id="LOCAL-00022" summary="update staffmapper">
+      <created>1593336787379</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1593336787379</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,11 +462,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="344" y="62" key="#connectTest.contextLoads/0.0.1536.824@0.0.1536.824" timestamp="1592850666640" />
-    <state x="465" y="8" key="CommitChangelistDialog2" timestamp="1593336745016">
+    <state x="465" y="8" key="CommitChangelistDialog2" timestamp="1593336786865">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593173187572" />
-    <state x="465" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593336745016" />
+    <state x="465" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593336786865" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1593170822780">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
