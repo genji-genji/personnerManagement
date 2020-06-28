@@ -22,14 +22,14 @@ g'd'd'fa'da'g'dne;
 		 this.id=id;
 <<<<<<< HEAD
 		 sff'g'h
-		 g'd'f'g'studentname
+		 fghj
 =======
 		 thisidea'=i;
 		 asd
 >>>>>>> 8d7ace1d317eb7b2f4ee73cf450443234f295e15
 	 }
 	 public String getname() {
-		 s'System;		 
+b'j'h'gs'System;		 
 	 }
 	 public int getid() {
 		 return studentid;
