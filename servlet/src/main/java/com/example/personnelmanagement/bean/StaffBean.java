@@ -15,7 +15,7 @@ public class StaffBean {
     private int origin_id; //招聘方式id
     private String origin_name; //招聘方式
     private int statu_id; //状态码
-    private String statu_name; //状态名
+    private String statu_name; //状态
     private int last; //试用期长度
     private int jage; //插入，更新，删除，返回判断码
 

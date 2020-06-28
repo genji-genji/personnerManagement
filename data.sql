@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS USER(
 
 insert into USER values('root','123456');
 
-
+-- --------------------------------
     CREATE TABLE IF NOT EXISTS FORM(
 	FORM_id INT PRIMARY KEY, 
 	FORM_name VARCHAR(5) NOT NULL
@@ -19,6 +19,7 @@ insert into USER values('root','123456');
     insert into FORM values(1,'临时员工');
     insert into FORM values(2,'正式员工');
 
+-- --------------------------------
 CREATE TABLE IF NOT EXISTS origin(
 	origin_id INT PRIMARY KEY,
 	origin_name VARCHAR(5) NOT NULL
@@ -28,6 +29,7 @@ CREATE TABLE IF NOT EXISTS origin(
  insert into origin values (2,'社会招聘');
  insert into origin values (3,'其他');
 
+-- --------------------------------
 CREATE TABLE IF NOT EXISTS statu(
 	statu_id INT PRIMARY KEY,
 	statu_name VARCHAR(10) NOT NULL
@@ -37,6 +39,7 @@ insert into statu values(1,'试用期');
 insert into statu values(2,'正式入职');
 insert into statu values(3,'离职');
 
+-- --------------------------------
 CREATE TABLE IF NOT EXISTS department(
 	department_id INT PRIMARY key,
 	department_name VARCHAR(15) NOT NULL,
@@ -50,21 +53,43 @@ ALTER TABLE department add check(department_type in ('company','department'));
 -- insert into department() values(1,"人事部");
 -- insert into department values(2,"战忽部");
 
+-- --------------------------------
+CReate table IF NOT EXISTS Job_type(
+type_id INT PRIMARY key,
+type_name varchar(15)
+);
+
+insert into Job_type values(1,"管理");
+insert into Job_type values(2,"技术");
+insert into Job_type values(3,"营销");
+insert into Job_type values(4,"市场");
+
+
+-- --------------------------------
+
 CREATE TABLE IF NOT EXISTS job(
 	job_id INT PRIMARY key,
 	job_name VARCHAR(15),
 	current_number INT NOT NULL,
 	max_number INT NOT NULL,
+	type_id INT NOT NULL,
 	check (current_number<max_number or current_number=max_number),
+	FOREIGN key(type_id) REFERENCES Job_type(type_id);
 	UNIQUE(job_id)
 
 ) ;
 
-insert into job values(1,"首席执行官",0,1);
-insert into job values(2,"艺术总监",0,1);
-insert into job values(3,"软件工程师",0,20);
-insert into job values(4,"美术设计",0,10);
 
+
+insert into job values(1,"首席执行官",0,1,1);
+insert into job values(2,"艺术总监",0,1,2);
+insert into job values(3,"软件工程师",0,20,2);
+insert into job values(5,"市场分析师",0,10,4);
+insert into job values(6,"销售员",0,10,3);
+insert into job values(4,"美术设计",0,10,2);
+
+
+-- --------------------------------
 
 
 CREATE TABLE IF NOT EXISTS staff(
@@ -92,6 +117,7 @@ alter table staff AUTO_INCREMENT=10000;
 
 insert INTO staff values(0,"男","叶良辰","1980-5-14","456987198005144073",3,2,1,1,2);
 
+-- --------------------------------
 
 CREATE TABLE IF NOT EXISTS TEST_USE(
 	SID INT PRIMARY KEY,
@@ -101,6 +127,7 @@ CREATE TABLE IF NOT EXISTS TEST_USE(
 	FOREIGN KEY (SID) REFERENCES staff(SID)
 );
 
+-- --------------------------------
 CREATE TABLE IF NOT EXISTS staff_statu(
 	SID INT NOT NULL,
 	statu_id INT NOT NULL,
@@ -111,6 +138,7 @@ CREATE TABLE IF NOT EXISTS staff_statu(
 	FOREIGN KEY (statu_id) REFERENCES statu(statu_id)
 );
 
+-- --------------------------------
 CREATE TABLE IF NOT EXISTS department_move(
 	SID INT NOT NULL,
 	department_id INT NOT NULL,
@@ -120,6 +148,7 @@ CREATE TABLE IF NOT EXISTS department_move(
 	FOREIGN KEY (department_id) REFERENCES department(department_id)
 
 );
+-- --------------------------------
 
 CREATE TABLE IF NOT EXISTS job_move(
 	SID INT NOT NULL,
@@ -131,6 +160,17 @@ CREATE TABLE IF NOT EXISTS job_move(
 
 );
 
+
+-------------视图-------------------------------
+-------------------------------------------------
+
+CREATE view staff_view as select sid,sex,name,BIRTHDAY,ID_NO,origin_name,form_name,department_name,job_name,statu_name,type_name
+    from staff,origin,FORM,department,job,statu,job_type
+    where staff.origin_id=origin.origin_id AND
+    staff.FORM_id=FORM.FORM_id AND
+    staff.department_id=department.department_id AND
+    staff.job_id=job.job_id AND staff.statu_id=statu.statu_id and job.type_id=job_type.type_id;
+-- --------------------------------
 
 delimiter $$
 CREATE procedure insert_staff(IN sid INT,sex varchar(1),name varchar(20),BIRTHDAY DATE,
@@ -154,6 +194,7 @@ delimiter ;
 call insert_staff(10001,"女",'颜玉书','1995-4-23','430304199504232106',1,2,2,2,2);
 
 
+-- --------------------------------
 delimiter $$
 CREATE procedure quit_staff(IN SID INT)
 begin
@@ -177,6 +218,7 @@ delimiter ;
 
 
 
+-- --------------------------------
 
 select sid,sex,name,BIRTHDAY,ID_NO,origin_name,FORM_name,department_name,job_name,statu_name
 from staff,origin,FORM,department,job,statu
