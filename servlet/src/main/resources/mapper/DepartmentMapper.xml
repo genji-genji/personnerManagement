@@ -15,4 +15,13 @@
     <select id="getMaxId" parameterType="int" resultType="com.example.personnelmanagement.bean.DepartmentBean">
           select Max(department_id) from department
     </select>
+
+    <select id="changeDepartment" parameterType="com.example.personnelmanagement.bean.DepartmentBean" >
+        update department
+        set department_name = #{department_name},
+        department_type = #{department_type},
+        department_phone = #{department_phone},
+        department_bt = #{department_bt}
+        where department_id = #{department_id}
+    </select>
 </mapper>

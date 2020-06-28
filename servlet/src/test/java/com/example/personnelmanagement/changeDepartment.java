@@ -10,15 +10,16 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class getDepartmentTest {
 
+public class changeDepartment {
     @Autowired
     DepartmentService departmentService;
 
     @Test
-    public void test() {
-        DepartmentBean departmentBean = departmentService.getDepartment_id(1);
-        System.out.println(departmentBean);
+    public void changeDepartment() {
+        DepartmentBean departmentBean = departmentService.changeDepartment(2,"刺蛇巢","department",12345,123456);
+        System.out.println("success");
+
 
     }
 }

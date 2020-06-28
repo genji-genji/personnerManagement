@@ -9,4 +9,6 @@ public interface DepartmentService {
     DepartmentBean getDepartment_phone(int department_phone);
     DepartmentBean getDepartment_bt(int department_bt);
     int addDepartment(DepartmentBean departmentBean);
+    DepartmentBean changeDepartment(int department_id, String department_name, String department_type, int department_phone, int department_bt );
 }
+
