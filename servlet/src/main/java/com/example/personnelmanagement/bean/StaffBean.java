@@ -191,6 +191,7 @@ public class StaffBean {
 
     @Override
     public String toString(){
-        return ""+this.sid+" "+this.sex+" "+this.name+""+this.origin_name;
+        return ""+this.sid+" "+this.sex+" "+this.name+" "+this.origin_name+" "+form_name
+                +" "+department_name+" "+job_name+" "+statu_name;
     }
 }

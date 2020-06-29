@@ -7,7 +7,7 @@ from staff,origin,FORM,department,job,statu
 where staff.origin_id=origin.origin_id AND
 staff.FORM_id=FORM.FORM_id AND
 staff.department_id=department.department_id AND
-staff.job_id=job.job_id AND staff.statu_id=statu.statu_id;
+staff.job_id=job.job_id AND staff.statu_id=statu.statu_id
 AND SID= #{staffId}
     </select>
     <select id="getStaffList" resultType="com.example.personnelmanagement.bean.StaffBean">

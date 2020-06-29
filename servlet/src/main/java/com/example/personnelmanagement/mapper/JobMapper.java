@@ -10,5 +10,7 @@ public interface JobMapper {
     int updateJob(JobBean jobBean);
     int deleteJob(int job_id);
     int deleteCheck(int job_id);
+    int getMaxId();
+    JobBean selectCAndMAXN(int job_id);
     List<StaffBean> selectStaffByJob(int job_id);
 }

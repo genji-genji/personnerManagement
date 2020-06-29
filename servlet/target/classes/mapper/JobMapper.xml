@@ -6,7 +6,7 @@
     </insert>
 
     <update id="updateJob" parameterType="com.example.personnelmanagement.bean.JobBean">
-        update job set job_name=#{job_name},current_number=#{current number},max_number=#{max_number},
+        update job set job_name=#{job_name},current_number=#{current_number},max_number=#{max_number},
         type_id=#{type_id} where job_id=#{job_id}
     </update>
 
@@ -18,5 +18,11 @@
     </select>
     <select id="deleteCheck" parameterType="int" resultType="int">
         select count() from staff where job_id=#{job_id}
+    </select>
+    <select id="selectCAndMAXN" parameterType="int" resultType="JobBean">
+        select current_number,max_number from job where job_id=#{job_id}
+    </select>
+    <select id="getMaxId" resultType="int">
+        select count(*) from job
     </select>
 </mapper>
