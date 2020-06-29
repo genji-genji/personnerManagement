@@ -23,11 +23,17 @@
                          <!-- 二级菜单 -->
                          <el-menu-item index="1-1">
                              <template slot="title">
+                            <i class="el-icon-edit-outline"></i>
+                            <span>信息填写</span>
+                        </template>
+                         </el-menu-item>
+                         <el-menu-item index="1-2">
+                             <template slot="title">
                             <i class="el-icon-alarm-clock"></i>
                             <span>异动管理</span>
                         </template>
                          </el-menu-item>
-                         <el-menu-item index="1-2">
+                         <el-menu-item index="1-3">
                              <template slot="title">
                             <i class="el-icon-tickets"></i>
                             <span>信息管理</span>
@@ -99,7 +105,7 @@
                             <span>新聘报表</span>
                         </template>
                          </el-menu-item>
-                         <el-menu-item index="2-2">
+                         <el-menu-item index="4-2">
                              <template slot="title">
                             <i class="el-icon-minus"></i>
                             <span>离职报表</span>
