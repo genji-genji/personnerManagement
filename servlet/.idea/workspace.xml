@@ -2,40 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53865a65-c69e-488c-b2b2-eed6605c79ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/controller/DepartmentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/dc5d6b38-97a2-4e8e-b2c8-0ca13081b292.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dc5d6b38-97a2-4e8e-b2c8-0ca13081b292.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/JobMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/JobMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/DepartmentBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/DepartmentBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/JobBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/JobBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/MessageBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/MessageBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/StaffBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/StaffBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/UserBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/UserBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/StaffController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/StaffController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/WelcomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/WelcomController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/jobController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/jobController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/DepartmentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/DepartmentMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/StaffMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/StaffMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/jobMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/jobMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/DepartmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/DepartmentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/JobService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/JobService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/StaffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/StaffService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/DepartmentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/DepartmentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/JobServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/JobServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/StaffServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/StaffServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/DepartmentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/JobMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/JobMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/personnelmanagement/PersonnelmanagementApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/personnelmanagement/PersonnelmanagementApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/personnelmanagement/addDepartmentTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/personnelmanagement/addDepartmentTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/personnelmanagement/addStaffHasTTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/personnelmanagement/addStaffHasTTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/personnelmanagement/addStaffText.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/personnelmanagement/addStaffText.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/personnelmanagement/connectTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/personnelmanagement/connectTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/personnelmanagement/getDepartmentTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/personnelmanagement/getDepartmentTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/personnelmanagement/getStaffText.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/personnelmanagement/getStaffText.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/personnelmanagement/quitStaffText.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/personnelmanagement/quitStaffText.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -328,6 +298,8 @@
       <workItem from="1593337720899" duration="121000" />
       <workItem from="1593365623623" duration="255000" />
       <workItem from="1593365895939" duration="17000" />
+      <workItem from="1593415568519" duration="3496000" />
+      <workItem from="1593422447323" duration="496000" />
     </task>
     <task id="LOCAL-00001" summary="StaffBean">
       <created>1592915748024</created>
@@ -530,11 +502,11 @@
     </state>
     <state x="113" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593355752728" />
     <state x="141" y="206" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593163444008" />
-    <state x="645" y="324" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1593350089448">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="806" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1593415696047">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="645" y="324" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1593350089448" />
-    <state x="806" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593331642864" />
+    <state x="806" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593415696047" />
     <state x="491" y="615" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592847148549">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -564,26 +536,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593365910298" />
-    <state width="1493" height="263" key="GridCell.Tab.0.bottom" timestamp="1593365877563">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1293" height="281" key="GridCell.Tab.0.bottom" timestamp="1593422768865">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="263" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593365877563" />
-    <state width="1860" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593335273669" />
-    <state width="1493" height="263" key="GridCell.Tab.0.center" timestamp="1593365877563">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1293" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593422768865" />
+    <state width="1293" height="281" key="GridCell.Tab.0.center" timestamp="1593422768865">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="263" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593365877563" />
-    <state width="1860" height="273" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593335273669" />
-    <state width="1493" height="263" key="GridCell.Tab.0.left" timestamp="1593365877562">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1293" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593422768865" />
+    <state width="1293" height="281" key="GridCell.Tab.0.left" timestamp="1593422768865">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="263" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593365877562" />
-    <state width="1860" height="273" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593335273669" />
-    <state width="1493" height="263" key="GridCell.Tab.0.right" timestamp="1593365877563">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1293" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593422768865" />
+    <state width="1293" height="281" key="GridCell.Tab.0.right" timestamp="1593422768865">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="263" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593365877563" />
-    <state width="1860" height="273" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593335273669" />
+    <state width="1293" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593422768865" />
     <state width="1493" height="263" key="GridCell.Tab.1.bottom" timestamp="1593365877563">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -641,11 +613,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="676" y="160" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593163122097" />
-    <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1593365895780">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="561" y="299" key="com.intellij.ide.util.TipDialog" timestamp="1593415568349">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="449" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1593365895780" />
-    <state x="561" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593155526332" />
+    <state x="561" y="299" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593415568349" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593337863806">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
