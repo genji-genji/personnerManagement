@@ -16,16 +16,23 @@
           select Max(department_id) from department
     </select>
 
-    <select id="changeDepartment" parameterType="com.example.personnelmanagement.bean.DepartmentBean" >
+    <update id="changeDepartment" parameterType="com.example.personnelmanagement.bean.DepartmentBean" >
         update department
         set department_name = #{department_name},
         department_type = #{department_type},
         department_phone = #{department_phone},
         department_bt = #{department_bt}
         where department_id = #{department_id}
-    </select>
+    </update>
+
     <select id="deleteDepartment" parameterType="com.example.personnelmanagement.bean.DepartmentBean">
         delete from department
         where department_id = #{department_id};
+    </select>
+    <select id="deleteCheck" parameterType="int" resultType="int">
+        select count() from staff where department_id=#{department_id}
+    </select>
+    <select id="selectStaffByJob" parameterType="int" resultType="com.example.personnelmanagement.bean.StaffBean">
+        select a.* from staff a ,department b where a.department_id=b.department_id
     </select>
 </mapper>

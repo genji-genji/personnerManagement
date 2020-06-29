@@ -17,7 +17,7 @@ public class changeDepartment {
 
     @Test
     public void changeDepartment() {
-        DepartmentBean departmentBean = departmentService.changeDepartment(2,"刺蛇巢","department",12345,123456);
+        int departmentBean = departmentService.changeDepartment(2,"刺蛇巢","department",12345,123456);
         System.out.println("success");
 
 

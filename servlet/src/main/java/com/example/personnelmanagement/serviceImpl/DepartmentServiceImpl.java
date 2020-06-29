@@ -1,11 +1,13 @@
 package com.example.personnelmanagement.serviceImpl;
 
 import com.example.personnelmanagement.bean.DepartmentBean;
+import com.example.personnelmanagement.bean.StaffBean;
 import com.example.personnelmanagement.mapper.DepartmentMapper;
 import com.example.personnelmanagement.service.DepartmentService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Service
 public class DepartmentServiceImpl implements DepartmentService {
@@ -48,14 +50,24 @@ public class DepartmentServiceImpl implements DepartmentService {
     }
 
     @Override
-    public DepartmentBean changeDepartment(int department_id, String department_name, String department_type, int department_phone, int department_bt ){
+    public int changeDepartment(int department_id, String department_name, String department_type, int department_phone, int department_bt ){
         return departmentMapper.changeDepartment(department_id,department_name,department_type,department_phone,department_bt);
     }
+
     @Override
     public DepartmentBean deleteDepartment(int department_id) {
         return departmentMapper.deleteDepartment(department_id);
     }
 
+    @Override
+    public int deleteCheck(int department_id) {
+        return departmentMapper.deleteCheck(department_id);
+    }
+
+    @Override
+    public List<StaffBean> SelectByDepartment(int department_id) {
+        return departmentMapper.SelectByDepartment(department_id);
+    }
 
 
 }
