@@ -59,10 +59,11 @@
 
       let _this= this;
       _this.$alert("test","test")
-      let loginUrl= this.rootUrl+"/user/login?username="+this.loginform.username+"password="+this.loginform.password;
+      let loginUrl= this.rootUrl+"/user/login?username="+this.loginform.username+"&password="+this.loginform.password;
       getRequest(loginUrl).then(back=>{
         var backDate = back.data;
-        if (backDate==null||backDate.length()==0){
+        _this.$alert(backDate.user_id,"test")
+        if (backDate== null||backDate.length == 0){
           _this.$alert("用户不存在或密码错误","登陆失败 ");
         }else{
           _this.$alert(backDate.user_id,backDate.user_id);
