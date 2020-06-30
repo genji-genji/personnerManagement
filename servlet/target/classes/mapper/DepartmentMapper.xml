@@ -32,7 +32,7 @@
     <select id="deleteCheck" parameterType="int" resultType="int">
         select count() from staff where department_id=#{department_id}
     </select>
-    <select id="selectStaffByJob" parameterType="int" resultType="com.example.personnelmanagement.bean.StaffBean">
-        select a.* from staff a ,department b where a.department_id=b.department_id
+    <select id="SelectByDepartment" parameterType="int" resultType="com.example.personnelmanagement.bean.StaffBean">
+        select a.* from staff a ,department b where a.department_id=#{department_id} and b.department_id = a.department_id
     </select>
 </mapper>

@@ -32,7 +32,7 @@
   export default {
   name: 'Login',
   mounted: function () {
-
+    this.$alert("fsdf","sdasd")
 
   },
 
@@ -56,15 +56,26 @@
       // console.log(this)
     },
     login () {
-      let loginUrl= this.rootUrl+"/login?username"
-      //getRequest()
+
+      let _this= this;
+      _this.$alert("test","test")
+      let loginUrl= this.rootUrl+"/user/login?username="+this.loginform.username+"password="+this.loginform.password;
+      getRequest(loginUrl).then(back=>{
+        var backDate = back.data;
+        if (backDate==null||backDate.length()==0){
+          _this.$alert("用户不存在或密码错误","登陆失败 ");
+        }else{
+          _this.$alert(backDate.user_id,backDate.user_id);
+          _this.$router.push('/home')
+        }
+      });
 
       //  this.$refs.loginRef.validate(async valid => {
       //      if(!valid) return;
       //      const {data: res} =await this.$http.post("login",this.loginform);
       //      console.log(res)
       // // 编程式导航跳转
-      this.$router.push('/home')
+
       //  });
     }
   }

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import javax.servlet.http.HttpSession;
 
 @Controller
+@RequestMapping("/user")
 public class LoginController {
     @Autowired
     private UserService userService;
@@ -23,10 +24,10 @@ public class LoginController {
        }
         return userBean;
     }
-    @RequestMapping(value = "/getUserBean" , method = RequestMethod.POST)
-    public UserBean getUserBean(String user_id,String password){
-        return userService.check(user_id,password);
-    }
+//    @RequestMapping(value = "/getUserBean" , method = RequestMethod.POST)
+//    public UserBean getUserBean(String user_id,String password){
+//        return userService.check(user_id,password);
+//    }
     @RequestMapping(value = "/askLogin",method = RequestMethod.POST)
     public String login(String user_id,String password){
         UserBean userBean=userService.check(user_id,password);
