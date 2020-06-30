@@ -7,6 +7,7 @@ import Depart_new from '../components/depart/Depart_new'
 import Welcome from '../components/Welcome'
 import Depart_re from '../components/depart/Depart_re'
 import Depart_re_dep from '../components/depart/Depart_re_dep'
+// eslint-disable-next-line camelcase
 import Select_person from '../components/depart/Select_person'
 import Person_news from '../components/depart/Person_news'
 import Post_new from '../components/post/Post_new'
@@ -20,97 +21,96 @@ import Report_dep from '../components/report/Report_dep'
 import Report_post from '../components/report/Report_post'
 import Report_people from '../components/report/Report_people'
 
-
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path:'',
-      redirect:'/login'
+      path: '',
+      redirect: '/login'
     },
     {
-       path: '/login',
-       component:Login
-     },
-     {
+      path: '/login',
+      component: Login
+    },
+    {
       path: '/Home',
-      component:Home,
-      redirect:'/Welcome',
-      children:[
+      component: Home,
+      redirect: '/Welcome',
+      children: [
         {
-          path:'/Welcome',
-          component:Welcome
+          path: '/Welcome',
+          component: Welcome
         },
         {
-          path:'/1-1',
-          component:Entry
+          path: '/1-1',
+          component: Entry
         },
         {
           path: '/2-1',
-          component:Depart_new
+          component: Depart_new
         },
         {
           path: '/2-2',
-          component:Depart_re
+          component: Depart_re
         },
         {
           path: '/Depart_re_dep',
-          component:Depart_re_dep
+          component: Depart_re_dep
         },
         {
-          path:'/2-3',
-          component:Select_person
+          path: '/2-3',
+          component: Select_person
         },
         {
           path: '/Person_news',
-          component:Person_news
+          component: Person_news
         },
         {
-          path:'/3-1',
-          component:Post_new
+          path: '/3-1',
+          component: Post_new
         },
         {
           path: '/3-2',
-          component:Post_re
+          component: Post_re
         },
         {
           path: '/Post_re_rel',
-          component:Post_re_rel
+          component: Post_re_rel
         },
         {
-          path:'/3-3',
-          component:Select_post
+          path: '/3-3',
+          component: Select_post
         },
         {
           path: '/Select_news',
-          component:Select_news
+          component: Select_news
         },
         {
-          path:'/4-1',
-          component:Report_new
+          path: '/4-1',
+          component: Report_new
         },
         {
-          path:'/4-2',
-          component:Report_leave
+          path: '/4-2',
+          component: Report_leave
         },
         {
-          path:'/4-3',
-          component:Report_dep
+          path: '/4-3',
+          component: Report_dep
         },
         {
-          path:'/4-4',
-          component:Report_post
+          path: '/4-4',
+          component: Report_post
         },
         {
-          path:'/4-5',
-          component:Report_people
+          path: '/4-5',
+          component: Report_people
         }
       ]
     },
     {
       path: '/Entry',
-      component:Entry
+      component: Entry
     }
   ]
 })

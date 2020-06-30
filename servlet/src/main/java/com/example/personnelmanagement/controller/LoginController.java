@@ -6,14 +6,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import javax.servlet.http.HttpSession;
 
 @Controller
 public class LoginController {
     @Autowired
     private UserService userService;
-    @RequestMapping("/login")
-    public String sayHello(){
-        return "login";
+    @RequestMapping(value = "/login", method =RequestMethod.GET)
+    public UserBean sayHello(@RequestParam String username, @RequestParam String password, HttpSession session ){
+
+       UserBean userBean= userService.check(username,password);
+       if (userBean!=null){
+           session.setAttribute("users",userBean);
+       }
+        return userBean;
     }
     @RequestMapping(value = "/getUserBean" , method = RequestMethod.POST)
     public UserBean getUserBean(String user_id,String password){

@@ -27,38 +27,47 @@
 </template>>
 
 <script>
-export default {
-    name:"Login",
-    data(){
-        return{
-            //登录表单数据绑定对象
-            loginform:{
-                username:'',
-                password:''
-            },
-            //表单的验证规则
-            loginFormRules:{
-                username:[{required: true, message:"请输入用户名",trigger:"blur"}],
-                password:[{required: true, message:"请输入密码",trigger:"blur"}]
-            }
-        }
-    },
-    methods:{
-        resetLogin(){
-            this.$refs.loginRef.resetFields();
-            // console.log(this)
-        },
-        login(){
-            //  this.$refs.loginRef.validate(async valid => {
-            //      if(!valid) return;
-            //      const {data: res} =await this.$http.post("login",this.loginform);
-            //      console.log(res)
-            // // 编程式导航跳转
-            this.$router.push("/home");
-            //  });
+  import {getRequest} from "../uitls/api";
 
-        }
+  export default {
+  name: 'Login',
+  mounted: function () {
+
+
+  },
+
+  data () {
+    return {
+      // 登录表单数据绑定对象
+      loginform: {
+        username: '',
+        password: ''
+      },
+      // 表单的验证规则
+      loginFormRules: {
+        username: [{required: true, message: '请输入用户名', trigger: 'blur'}],
+        password: [{required: true, message: '请输入密码', trigger: 'blur'}]
+      }
     }
+  },
+  methods: {
+    resetLogin () {
+      this.$refs.loginRef.resetFields()
+      // console.log(this)
+    },
+    login () {
+      let loginUrl= this.rootUrl+"/login?username"
+      //getRequest()
+
+      //  this.$refs.loginRef.validate(async valid => {
+      //      if(!valid) return;
+      //      const {data: res} =await this.$http.post("login",this.loginform);
+      //      console.log(res)
+      // // 编程式导航跳转
+      this.$router.push('/home')
+      //  });
+    }
+  }
 }
 </script>
 

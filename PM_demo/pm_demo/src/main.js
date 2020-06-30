@@ -12,10 +12,10 @@ import QS from 'qs'
 Vue.use(ElementUI)
 Vue.prototype.$axios = 'axios'
 Vue.prototype.qs = QS
+Vue.prototype.rootUrl='/api/'
 
-//配置请求的根路径
+// 配置请求的根路径
 // axios.defaults.baseURL = 'https://api.coindesk.com/v1/bpi/currentprice.json'
-
 
 Vue.config.productionTip = false
 
@@ -24,7 +24,7 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>',
+  template: '<App/>'
 
   // mounted () {
   //   axios

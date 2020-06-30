@@ -129,7 +129,7 @@
                             <span>人事月报</span>
                         </template>
                          </el-menu-item>
-                    </el-submenu>     
+                    </el-submenu>
                 </el-menu>
             </el-aside>
             <!-- 右侧内容 -->
@@ -146,7 +146,7 @@
 
 <script>
 export default {
-    
+
 }
 </script>
 
