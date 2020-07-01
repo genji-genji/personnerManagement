@@ -1,5 +1,5 @@
 <template>
-    <el-table
+  <el-table
     :data="staffList"
     height="250"
     border
@@ -27,42 +27,45 @@
       label="性别">
     </el-table-column>
     <el-table-column
+      prop="statu_name"
+      label="状态">
+    </el-table-column>
+    <el-table-column
       prop="START_TIME"
       label="入职日期">
     </el-table-column>
-<!--    <el-table-column-->
-<!--      prop="edu"-->
-<!--      label="学历">-->
-<!--    </el-table-column>-->
+    <!--    <el-table-column-->
+    <!--      prop="edu"-->
+    <!--      label="学历">-->
+    <!--    </el-table-column>-->
   </el-table>
 </template>
 
 <script>
-import {getRequest} from "../../uitls/api";
+  import {getRequest} from "../uitls/api";
 
-export default {
+  export default {
 
-  mounted:function () {
+    mounted:function () {
 
-    let url=this.rootUrl +"/staff/getNewStaffList";
+      let url=this.rootUrl +"/staff/getNowStaffList";
 
-    getRequest(url).then(back=>{
+      getRequest(url).then(back=>{
 
-      this.staffList=back.data
+        this.staffList=back.data
 
-    })
+      })
 
-  },
+    },
 
-  data(){
-        return{
+    data(){
+      return{
 
-          staffList:[],
-        }
+        staffList:[],
+      }
     }
-}
+  }
 </script>
-
 <style lang="less" scoped>
 
 </style>

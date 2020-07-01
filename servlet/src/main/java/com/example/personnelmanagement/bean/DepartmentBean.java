@@ -10,6 +10,7 @@ public class DepartmentBean {
     private int department_phone;
     private int department_bt;
     private int temp;
+    private int type_id;
 
     public DepartmentBean(int department_id, String department_name,String department_type,int department_phone,int department_bt) {
         this.department_id = department_id;
@@ -17,6 +18,14 @@ public class DepartmentBean {
         this.department_type = department_type;
         this.department_phone = department_phone;
         this.department_bt = department_bt;
+    }
+    public DepartmentBean(int department_id, String department_name,String department_type,int department_phone,int department_bt,int type_id) {
+        this.department_id = department_id;
+        this.department_name = department_name;
+        this.department_type = department_type;
+        this.department_phone = department_phone;
+        this.department_bt = department_bt;
+        this.type_id=type_id;
     }
 
     public int getDepartment_id(){

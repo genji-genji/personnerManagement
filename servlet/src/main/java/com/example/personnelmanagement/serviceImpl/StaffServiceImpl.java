@@ -54,6 +54,10 @@ public class StaffServiceImpl implements StaffService {
         return staffBean.getJage();
     }
     @Override
+    public List<Map<String,Object>> getQuitStaffList() {
+        return staffMapper.getQuitStaffList();
+    }
+    @Override
     public int getMaxSid(){return staffMapper.getMaxSid();}
     @Override
     public int getStaffNum(){return  staffMapper.getStaffNum();}
@@ -66,5 +70,10 @@ public class StaffServiceImpl implements StaffService {
     @Override
     public List<Map<String, Object>> getOriginList() {
         return staffMapper.getOriginList();
+    }
+
+    @Override
+    public List<Map<String, Object>> getNowStaffList() {
+        return staffMapper.getNowStaffList();
     }
 }

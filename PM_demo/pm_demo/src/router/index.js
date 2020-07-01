@@ -20,6 +20,8 @@ import Report_leave from '../components/report/Report_leave'
 import Report_dep from '../components/report/Report_dep'
 import Report_post from '../components/report/Report_post'
 import Report_people from '../components/report/Report_people'
+import staff_quit from "../components/staff_quit";
+import quitStaff from "../components/depart/quitStaff";
 
 Vue.use(Router)
 
@@ -45,6 +47,14 @@ export default new Router({
         {
           path: '/1-1',
           component: Entry
+        },
+        {
+          path:'/1-2',
+          component: staff_quit
+        },
+        {
+          path:'/1-3',
+          component: quitStaff
         },
         {
           path: '/2-1',

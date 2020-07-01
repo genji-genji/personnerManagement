@@ -82,7 +82,9 @@ public class StaffController {
 
     //员工离职
     @RequestMapping(value ="/quitStaff",method = RequestMethod.POST)
-    public MessageBean quitStaff(StaffBean staffBean){
+    public MessageBean quitStaff(String sid){
+        StaffBean staffBean =new StaffBean();
+        staffBean.setSid(Integer.parseInt(sid));
         int result=staffService.quitStaff(staffBean);
 
         if (result==1){
@@ -92,6 +94,16 @@ public class StaffController {
             return new MessageBean("error","添加失败");
         }
     }
+
+    @RequestMapping(value = "/getQuitStaffList",method = RequestMethod.GET)
+    public List<Map<String,Object>> getQuitStaffList() {
+        return staffService.getQuitStaffList();
+    }
+    @RequestMapping(value = "/getNowStaffList",method = RequestMethod.GET)
+    public List<Map<String,Object>> getNowStaffList() {
+        return staffService.getNowStaffList();
+    }
+
     @RequestMapping(value = "/getFormList",method = RequestMethod.GET)
     public List<Map<String,Object>> getFormList(){
         return staffService.getFormList();

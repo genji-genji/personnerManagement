@@ -12,7 +12,16 @@ AND SID= #{staffId}
     </select>
     <select id="getNewStaffList" resultType="java.util.Map">
         select a.*,b.START_TIME from staff_view a,test_use b
-        where statu_name='试用期'
+        where statu_name='试用期' order by a.sid
+    </select>
+    <select id="getQuitStaffList" resultType="java.util.Map">
+        select a.*,b.START_TIME from staff_view a,staff_statu b
+        where b.statu_id=3 and b.SID=a.sid  order by a.sid
+    </select>
+    <select id="getNowStaffList" resultType="java.util.Map">
+        select a.*,b.START_TIME from staff_view a,staff_statu b
+        where  statu_name&lt;&gt;'离职' and b.START_TIME=(select min(START_TIME) from staff ,staff_statu
+        where staff.SID=staff_statu.SID) order by a.sid
     </select>
 
     <select id="getFormList" resultType="java.util.Map">

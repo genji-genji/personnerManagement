@@ -4,7 +4,7 @@
     <el-input v-model="input" placeholder="部门编号"></el-input>
     <el-button type="primary" icon="el-icon-search" @click="Re">搜索</el-button>
 </div>
-    
+
 </template>
 
 <script>
@@ -12,7 +12,7 @@ export default {
     name:"Depart_re",
     data(){
         return{
-            input:'123'
+            input:''
         }
     },
     methods:{

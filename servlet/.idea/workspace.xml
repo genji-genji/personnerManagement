@@ -2,39 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53865a65-c69e-488c-b2b2-eed6605c79ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/depart/quitStaff.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/staff_quit.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/Entry.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/Entry.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/post/Post_new.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/post/Post_new.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/post/Post_re.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/post/Post_re.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/post/Post_re_rel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/post/Post_re_rel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/post/Select_news.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/post/Select_news.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/post/Select_post.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/post/Select_post.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/depart/Depart_new.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/depart/Depart_new.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/depart/Depart_re.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/depart/Depart_re.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/depart/Select_person.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/depart/Select_person.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/report/Report_leave.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/report/Report_leave.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/report/Report_new.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/report/Report_new.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PM_demo/pm_demo/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/dc5d6b38-97a2-4e8e-b2c8-0ca13081b292.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dc5d6b38-97a2-4e8e-b2c8-0ca13081b292.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/bean/JobBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/bean/JobBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/bean/DepartmentBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/bean/DepartmentBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/controller/DepartmentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/controller/StaffController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/controller/StaffController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/controller/jobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/controller/jobController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/mapper/JobMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/mapper/JobMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/mapper/StaffMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/mapper/StaffMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/service/JobService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/service/JobService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/service/StaffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/service/StaffService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/serviceImpl/JobServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/serviceImpl/JobServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/serviceImpl/StaffServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/serviceImpl/StaffServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/JobMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/JobMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DepartmentMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/StaffMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/StaffMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/personnelmanagement/selectStByJobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/personnelmanagement/selectStByJobTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/JobBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/JobBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/DepartmentBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/bean/DepartmentBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/StaffController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/StaffController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/jobController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/jobController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/StaffMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/StaffMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/jobMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/jobMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/JobService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/JobService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/StaffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/service/StaffService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/JobServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/JobServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/StaffServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/serviceImpl/StaffServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/JobMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/JobMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/DepartmentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/DepartmentMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mapper/StaffMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/StaffMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,15 +75,7 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="personnelmanagement: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="test_use: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - personnelmanagement@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="personnelmanagement: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="department: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -164,6 +149,22 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunManager" selected="Spring Boot.PersonnelmanagementApplication">
+    <configuration name="addDepartmentTest.addDepartmentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="servlet" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.personnelmanagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.personnelmanagement" />
+      <option name="MAIN_CLASS_NAME" value="com.example.personnelmanagement.addDepartmentTest" />
+      <option name="METHOD_NAME" value="addDepartmentTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="addStaffHasTTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="servlet" />
       <extension name="coverage">
@@ -189,21 +190,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.example.personnelmanagement" />
       <option name="MAIN_CLASS_NAME" value="com.example.personnelmanagement.addStaffText" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="connectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="servlet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.personnelmanagement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.personnelmanagement" />
-      <option name="MAIN_CLASS_NAME" value="com.example.personnelmanagement.connectTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -265,11 +251,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.addDepartmentTest.addDepartmentTest" />
         <item itemvalue="JUnit.addStaffText" />
         <item itemvalue="JUnit.quitStaffText" />
         <item itemvalue="JUnit.addStaffHasTTest" />
         <item itemvalue="JUnit.getStaffText" />
-        <item itemvalue="JUnit.connectTest" />
       </list>
     </recent_temporary>
   </component>
@@ -286,7 +272,17 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:MySQL - personnelmanagement@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@6953090b" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@10d4ec84" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:MySQL - personnelmanagement@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@24e3e744" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:MySQL - personnelmanagement@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@6511ad89" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -320,7 +316,7 @@
       <workItem from="1593502504143" duration="8706000" />
       <workItem from="1593532995338" duration="1497000" />
       <workItem from="1593586860659" duration="3380000" />
-      <workItem from="1593609695741" duration="12857000" />
+      <workItem from="1593609695741" duration="20870000" />
     </task>
     <task id="LOCAL-00001" summary="StaffBean">
       <created>1592915748024</created>
@@ -504,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593606704176</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="api test2">
+      <created>1593627379229</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1593627379229</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,10 +552,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="328" y="148" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1592846609752" />
-    <state x="113" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1593620028028">
+    <state x="113" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1593632877836">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="113" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593620028028" />
+    <state x="113" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593632877836" />
     <state x="141" y="206" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593163444008" />
     <state x="645" y="324" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1593431894565">
       <screen x="0" y="0" width="1536" height="824" />
@@ -571,10 +574,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="344" y="62" key="#connectTest.contextLoads/0.0.1536.824@0.0.1536.824" timestamp="1592850666640" />
-    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1593627354321">
+    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1593636404080">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593627354321" />
+    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593636404080" />
     <state x="465" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593336786865" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1593526033045">
       <screen x="0" y="0" width="1536" height="824" />
@@ -588,42 +591,42 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593587341439" />
-    <state width="1493" height="262" key="GridCell.Tab.0.bottom" timestamp="1593627354414">
+    <state width="1493" height="265" key="GridCell.Tab.0.bottom" timestamp="1593636404116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="262" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593627354414" />
+    <state width="1493" height="265" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593636404116" />
     <state width="1860" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593335273669" />
-    <state width="1493" height="262" key="GridCell.Tab.0.center" timestamp="1593627354414">
+    <state width="1493" height="265" key="GridCell.Tab.0.center" timestamp="1593636404116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="262" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593627354414" />
+    <state width="1493" height="265" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593636404116" />
     <state width="1860" height="273" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593335273669" />
-    <state width="1493" height="262" key="GridCell.Tab.0.left" timestamp="1593627354414">
+    <state width="1493" height="265" key="GridCell.Tab.0.left" timestamp="1593636404116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="262" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593627354414" />
+    <state width="1493" height="265" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593636404116" />
     <state width="1860" height="273" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593335273669" />
-    <state width="1493" height="262" key="GridCell.Tab.0.right" timestamp="1593627354414">
+    <state width="1493" height="265" key="GridCell.Tab.0.right" timestamp="1593636404116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="262" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593627354414" />
+    <state width="1493" height="265" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593636404116" />
     <state width="1860" height="273" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593335273669" />
-    <state width="1493" height="262" key="GridCell.Tab.1.bottom" timestamp="1593627354414">
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1593636404116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="262" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593627354414" />
-    <state width="1493" height="262" key="GridCell.Tab.1.center" timestamp="1593627354414">
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593636404116" />
+    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1593636404116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="262" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1593627354414" />
-    <state width="1493" height="262" key="GridCell.Tab.1.left" timestamp="1593627354414">
+    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1593636404116" />
+    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1593636404116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="262" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1593627354414" />
-    <state width="1493" height="262" key="GridCell.Tab.1.right" timestamp="1593627354414">
+    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1593636404116" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1593636404116">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="262" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1593627354414" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1593636404116" />
     <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1593617121151">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -652,19 +655,27 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="508" y="116" key="VCS.ChangeListViewerDialog/0.0.1536.824@0.0.1536.824" timestamp="1593530521650" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1593533218722">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1593627409948">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1593533218722" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1593627409948" />
     <state x="451" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593337856965" />
+    <state x="349" y="68" key="com.intellij.database.dbimport.ImportDialog" timestamp="1593628572698">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="68" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.824@0.0.1536.824" timestamp="1593628572698" />
+    <state x="499" y="218" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1593630735974">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="218" key="com.intellij.database.dbimport.ImportUtil.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1593630735974" />
     <state x="548" y="236" width="439" height="344" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1593088818469">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="236" width="439" height="344" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1536.824@0.0.1536.824" timestamp="1593088818469" />
-    <state x="541" y="105" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1593532495877">
+    <state x="542" y="62" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1593629566772">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="541" y="105" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1593532495877" />
+    <state x="542" y="62" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1593629566772" />
     <state x="676" y="160" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593163122097" />
     <state x="449" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1593586859691">
       <screen x="0" y="0" width="1536" height="824" />
@@ -679,10 +690,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="428" y="204" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1593365840358" />
-    <state x="583" y="313" key="git4idea.ui.GitStashDialog" timestamp="1593530422929">
+    <state x="583" y="313" key="git4idea.ui.GitStashDialog" timestamp="1593627402260">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="583" y="313" key="git4idea.ui.GitStashDialog/0.0.1536.824@0.0.1536.824" timestamp="1593530422929" />
+    <state x="583" y="313" key="git4idea.ui.GitStashDialog/0.0.1536.824@0.0.1536.824" timestamp="1593627402260" />
     <state x="421" y="260" key="git4idea.ui.GitUnstashDialog" timestamp="1593530522881">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

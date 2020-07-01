@@ -26,21 +26,47 @@
                             <i class="el-icon-edit-outline"></i>
                             <span>信息填写</span>
                         </template>
-                         </el-menu-item>
-                         <el-menu-item index="1-2">
-                             <template slot="title">
-                            <i class="el-icon-alarm-clock"></i>
-                            <span>异动管理</span>
+                        </el-menu-item>
+                      <el-menu-item index="1-2">
+                            <template slot="title">
+                           <i class="el-icon-alarm-clock"></i>
+                            <span>在职人员</span>
                         </template>
                          </el-menu-item>
                          <el-menu-item index="1-3">
                              <template slot="title">
                             <i class="el-icon-tickets"></i>
-                            <span>信息管理</span>
+                            <span>员工离职</span>
                         </template>
                          </el-menu-item>
                     </el-submenu>
-                    <el-submenu index="2">
+                  <el-submenu index="2">
+                    <!-- 一级菜单模板区 -->
+                    <template slot="title">
+                      <i class="el-icon-s-check"></i>
+                      <span>岗位管理</span>
+                    </template>
+                    <!-- 二级菜单 -->
+                    <el-menu-item index="3-1">
+                      <template slot="title">
+                        <i class="el-icon-plus"></i>
+                        <span>新建岗位</span>
+                      </template>
+                    </el-menu-item>
+                    <el-menu-item index="3-2">
+                      <template slot="title">
+                        <i class="el-icon-edit"></i>
+                        <span>修改岗位</span>
+                      </template>
+                    </el-menu-item>
+                    <el-menu-item index="3-3">
+                      <template slot="title">
+                        <i class="el-icon-search"></i>
+                        <span>查询员工</span>
+                      </template>
+                    </el-menu-item>
+                  </el-submenu>
+                    <el-submenu index="3">
                         <!-- 一级菜单模板区 -->
                         <template slot="title">
                             <i class="el-icon-s-home"></i>
@@ -65,32 +91,6 @@
                                 <span>员工查询</span>
                             </template>
                         </el-menu-item>
-                    </el-submenu>
-                    <el-submenu index="3">
-                        <!-- 一级菜单模板区 -->
-                        <template slot="title">
-                            <i class="el-icon-s-check"></i>
-                            <span>岗位管理</span>
-                        </template>
-                         <!-- 二级菜单 -->
-                         <el-menu-item index="3-1">
-                             <template slot="title">
-                            <i class="el-icon-plus"></i>
-                            <span>新建岗位</span>
-                        </template>
-                         </el-menu-item>
-                         <el-menu-item index="3-2">
-                             <template slot="title">
-                            <i class="el-icon-edit"></i>
-                            <span>修改岗位</span>
-                        </template>
-                         </el-menu-item>
-                         <el-menu-item index="3-3">
-                             <template slot="title">
-                            <i class="el-icon-search"></i>
-                            <span>查询员工</span>
-                        </template>
-                         </el-menu-item>
                     </el-submenu>
                     <el-submenu index="4">
                         <!-- 一级菜单模板区 -->
@@ -122,12 +122,12 @@
                             <i class="el-icon-sort"></i>
                             <span>岗位调动报表</span>
                         </template>
-                         </el-menu-item>
-                          <el-menu-item index="4-5">
-                             <template slot="title">
-                            <i class="el-icon-tickets"></i>
-                            <span>人事月报</span>
-                        </template>
+<!--                         </el-menu-item>-->
+<!--                          <el-menu-item index="4-5">-->
+<!--                             <template slot="title">-->
+<!--                            <i class="el-icon-tickets"></i>-->
+<!--                            <span>人事月报</span>-->
+<!--                        </template>-->
                          </el-menu-item>
                     </el-submenu>
                 </el-menu>

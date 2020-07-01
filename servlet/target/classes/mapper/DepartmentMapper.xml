@@ -9,7 +9,7 @@
 
     <insert id="addDepartment" parameterType="com.example.personnelmanagement.bean.DepartmentBean">
         insert into department values
-        (#{department_id},#{department_name},#{department_type},#{department_phone},#{department_bt})
+        (#{department_id},#{department_name},#{department_type},#{department_phone},#{department_bt},#{type_id})
     </insert>
 
     <select id="getMaxId" parameterType="int" resultType="com.example.personnelmanagement.bean.DepartmentBean">

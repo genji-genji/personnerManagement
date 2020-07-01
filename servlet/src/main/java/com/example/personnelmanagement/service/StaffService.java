@@ -20,4 +20,6 @@ public interface StaffService {
     int getMaxSid();
     int getStaffNum();
     int quitStaff(StaffBean staffBean);
+    List<Map<String,Object>> getQuitStaffList();
+    List<Map<String,Object>> getNowStaffList();
 }

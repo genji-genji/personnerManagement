@@ -17,6 +17,9 @@ public interface StaffMapper {
     int addStaffHasT(StaffBean staffBean);
 
     int quitStaff(StaffBean staffBean);
+    List<Map<String,Object>> getQuitStaffList();
+    List<Map<String,Object>> getNowStaffList();
+
 
     int getMaxSid();
 

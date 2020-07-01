@@ -26,8 +26,13 @@ public class DepartmentController {
 
     @RequestMapping(value = "/addDepartment" ,method = RequestMethod.POST)
 
-    public MessageBean addDepartment (int department_id,String department_name,String department_type,int department_phone,int department_bt){
-        DepartmentBean departmentBean = new DepartmentBean(department_id,department_name,department_type,department_phone,department_bt);
+    public MessageBean addDepartment (String department_id,String department_name,String department_type,String department_phone,String department_bt,String type_id){
+        int departmentInt=Integer.parseInt(department_id);
+        int phoneInt=Integer.parseInt(department_phone);
+        int btInt=Integer.parseInt(department_bt);
+        int typeInt=Integer.parseInt(type_id);
+
+        DepartmentBean departmentBean = new DepartmentBean(departmentInt,department_name,department_type,phoneInt,btInt,typeInt);
         int result = departmentMapper.addDepartment(departmentBean);
         if (result==1){
             return new MessageBean("success","添加成功");
