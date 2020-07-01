@@ -4,6 +4,9 @@
     <insert id="addJob" parameterType="com.example.personnelmanagement.bean.JobBean">
         insert into job values (#{job_id},#{job_name},#{current_number},#{max_number},#{type_id})
     </insert>
+    <select id="getCM" parameterType="int" resultType="com.example.personnelmanagement.bean.JobBean">
+        select current_number,max_number from job where job_id=#{job_id}
+    </select>
 
     <update id="updateJob" parameterType="com.example.personnelmanagement.bean.JobBean">
         update job set job_name=#{job_name},max_number=#{max_number},

@@ -1,6 +1,6 @@
 <template>
   <div class="re_c">
-    <h2>输入部门编号</h2>
+    <h2>员工离职</h2>
     <el-input v-model="staff_id" placeholder="输入离职员工号"></el-input>
     <el-button type="primary" icon="el-icon-search" @click="quit">删除</el-button>
   </div>

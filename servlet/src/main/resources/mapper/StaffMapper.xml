@@ -12,7 +12,7 @@ AND SID= #{staffId}
     </select>
     <select id="getNewStaffList" resultType="java.util.Map">
         select a.*,b.START_TIME from staff_view a,test_use b
-        where statu_name='试用期' order by a.sid
+        where statu_name='试用期'and a.sid=b.SID order by a.sid
     </select>
     <select id="getQuitStaffList" resultType="java.util.Map">
         select a.*,b.START_TIME from staff_view a,staff_statu b

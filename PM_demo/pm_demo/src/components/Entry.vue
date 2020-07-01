@@ -269,7 +269,7 @@ export default {
 
     data() {
       return {
-        num: "",
+        num: "1",
         isOK: true,
         name: "",
         sex: 1,

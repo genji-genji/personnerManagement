@@ -15,5 +15,6 @@ public interface JobMapper {
     List<Map<String,Object>> getJobList();
     List<Map<String,Object>> getJobTypeList();
     JobBean getJobById(int job_id);
+    JobBean getCM(int job_id);
     List<Map<String,Object>> selectStaffByJob(int job_id);
 }

@@ -1,7 +1,9 @@
 package com.example.personnelmanagement.serviceImpl;
 
+import com.example.personnelmanagement.bean.JobBean;
 import com.example.personnelmanagement.bean.StaffBean;
 import com.example.personnelmanagement.bean.UserBean;
+import com.example.personnelmanagement.mapper.JobMapper;
 import com.example.personnelmanagement.mapper.StaffMapper;
 import com.example.personnelmanagement.service.StaffService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +16,8 @@ import java.util.Map;
 public class StaffServiceImpl implements StaffService {
     @Autowired
     private StaffMapper staffMapper;
+    @Autowired
+    private JobMapper jobMapper;
 
     @Override
     public StaffBean getStaffMessage(int staffId){
@@ -33,17 +37,30 @@ public class StaffServiceImpl implements StaffService {
     @Override
     public int addStaff(StaffBean staffBean){
         int jage;
+//        判断是否超过最大人数
+        JobBean beanToJage =jobMapper.getCM(staffBean.getJob_id());
+        if (beanToJage.getCurrent_number()+1<=beanToJage.getMax_number()){
         staffBean.setSid(staffMapper.getMaxSid()+1);
         staffMapper.addStaff(staffBean);
         jage=staffBean.getJage();
+        }else {
+            jage=0;
+    }
         return jage;
     }
 
     @Override
     public int addStaffHasT(StaffBean staffBean) {
-        staffBean.setSid(staffMapper.getMaxSid()+1);
-        staffMapper.addStaffHasT(staffBean);
-        int jage = staffBean.getJage();
+        int jage;
+        JobBean beanToJage =jobMapper.getCM(staffBean.getJob_id());
+        if (beanToJage.getCurrent_number()+1<=beanToJage.getMax_number()) {
+
+            staffBean.setSid(staffMapper.getMaxSid() + 1);
+            staffMapper.addStaffHasT(staffBean);
+             jage = staffBean.getJage();
+        }else {
+            jage=0;
+        }
         return jage;
     }
 

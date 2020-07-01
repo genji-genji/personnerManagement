@@ -1139,12 +1139,12 @@
       <Definer>root@localhost</Definer>
     </view>
     <routine id="296" parent="6" name="insert_staff">
-      <SourceTextLength>370</SourceTextLength>
+      <SourceTextLength>446</SourceTextLength>
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
     </routine>
     <routine id="297" parent="6" name="insert_staff_with_test">
-      <SourceTextLength>459</SourceTextLength>
+      <SourceTextLength>536</SourceTextLength>
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
     </routine>
@@ -1154,7 +1154,7 @@
       <RoutineKind>procedure</RoutineKind>
     </routine>
     <routine id="299" parent="6" name="quit_staff">
-      <SourceTextLength>399</SourceTextLength>
+      <SourceTextLength>519</SourceTextLength>
       <Definer>root@localhost</Definer>
       <RoutineKind>procedure</RoutineKind>
     </routine>
