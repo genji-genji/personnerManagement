@@ -56,7 +56,7 @@ export default {
      {
        post_num: "1",
        isOK: true,
-       post_name: "张三",
+       post_name: "张二",
        post_type: "上海市普陀区金沙江路 1518 弄",
      }]
       }

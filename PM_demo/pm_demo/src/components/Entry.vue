@@ -142,8 +142,28 @@
 </template>
 
 <script>
+import {postRequest} from "../uitls/api";
+
 export default {
+
      methods: {
+       modifyUser(){
+        let _this=this;
+         postRequest(this.rootUrl+"/staff/assStaff?sid="+_this.scope.row.num+"&sex="+_this.scope.row.sex+"&name="+_this.scope.row.name+"&birthday="+_this.row.date
+         +"&id_no="+_this.scope.row.ID+
+           "&origin_id="+_this.scope.row.address+"&form_id="+_this.scope.row.type_work+"&department_id="+_this.scope.row.dep+"&job_id="+_this.scope.row.job_id
+         +"&statu_id="+1).then(back=>{
+
+           let backDate=back.data;
+           _this.$message(backDate.result,backDate.message);
+
+
+         });
+
+       },
+
+
+
       dbclick(row, event, column){
       row.isOK =!row.isOK
     }
@@ -157,6 +177,18 @@ export default {
        isOK: true,
        name: "张三",
        sex: "男",
+       date: "",
+       ID: "",
+       dep: "",
+       date_in: "",
+       date_work: "",
+       work: "",
+       adress: "",
+       test_start: "",
+       text_end : "",
+       job_id: "",
+
+
      }]
       }
     }
