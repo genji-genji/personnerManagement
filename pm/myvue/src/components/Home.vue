@@ -1,7 +1,7 @@
 <template>
   <el-container class="home_container">
     <el-header class="gao-el-header">
-      <div class="home_title" >东软云医院HIS系统</div>
+      <div class="home_title" >医院HIS系统</div>
       <div class="home_userinfoContainer" >
         <el-dropdown @command="handleCommand">
         <span class="el-dropdown-link home_userinfo">
