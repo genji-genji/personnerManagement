@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class DepartmentServiceImpl implements DepartmentService {
@@ -69,5 +70,8 @@ public class DepartmentServiceImpl implements DepartmentService {
         return departmentMapper.SelectByDepartment(department_id);
     }
 
-
+    @Override
+    public List<Map<String, Object>> getDepartmentList() {
+        return departmentMapper.getDepartmentList();
+    }
 }

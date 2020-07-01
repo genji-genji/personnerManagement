@@ -31,13 +31,23 @@ public class StaffController {
     }
 //员工入职
     @RequestMapping(value = "/addStaff",method = RequestMethod.POST)
-    public MessageBean addStaff(int sid,String sex,String name,String birthday,String id_no,
-                                int origin_id,int form_id,int department_id,int job_id,int statu_id){
-        StaffBean staffBean=new StaffBean(sid,sex,name,birthday,id_no,origin_id,form_id,department_id,job_id,statu_id);
+    public MessageBean addStaff(String sid,String sex,String name,String birthday,String id_no,
+                                String origin_id,String form_id,String department_id,String job_id,String statu_id,String last){
+
+        int sidInt = Integer.parseInt(sid);
+        int originInt = Integer.parseInt(origin_id);
+        int formInt = Integer.parseInt(form_id);
+        int departmentInt = Integer.parseInt(department_id);
+        int jobInt = Integer.parseInt(job_id);
+        int statuInt = Integer.parseInt(statu_id);
+        int lastInt = Integer.parseInt(last);
+        StaffBean staffBean=new StaffBean(sidInt,sex,name,birthday,id_no,originInt,formInt,departmentInt,jobInt,statuInt);
+        staffBean.setLast(lastInt);
+
 
         int result;
         //无试用期入职
-        if (statu_id == 2) {
+        if (sidInt == 2) {
 
 
             result = staffService.addStaff(staffBean);

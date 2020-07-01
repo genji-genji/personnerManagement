@@ -10,8 +10,10 @@ spring:
     url: jdbc:mysql://localhost:3306/personnelmanagement
     username: root
     password: as145768
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.example.personnelmanagement.bean
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

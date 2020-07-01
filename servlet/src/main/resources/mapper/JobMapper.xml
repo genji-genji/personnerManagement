@@ -25,4 +25,7 @@
     <select id="getMaxId" resultType="int">
         select count(*) from job
     </select>
+    <select id="getJobList" resultType="java.util.Map">
+        select * from job
+    </select>
 </mapper>

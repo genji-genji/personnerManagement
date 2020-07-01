@@ -1,22 +1,22 @@
 <template>
    <el-table :data="tableData" border style="width: 100%;margin:0 auto" @row-dblclick="dbclick" >
 
-      <el-table-column prop="num" label="员工号" width="180">
-        <template slot-scope="scope">
-          <el-form :model="scope.row">
-            <el-form-item size="mini" label-width="66px">
-              <el-input v-if="scope.row.isOK" v-model="scope.row.num" style="width:100%;hight:100%"></el-input>
-              <span v-else>{{scope.row.num}}</span>
-            </el-form-item>
-          </el-form>
-        </template>
-      </el-table-column>
+<!--      <el-table-column prop="num" label="员工号" width="180">-->
+<!--        <template slot-scope="scope">-->
+<!--          <el-form :model="scope.row">-->
+<!--            <el-form-item size="mini" label-width="0px">-->
+<!--              <el-input v-if="scope.row.isOK" v-model="num" style="width:50%;hight:100%"></el-input>-->
+<!--              <span v-else>{{scope.row.num}}</span>-->
+<!--            </el-form-item>-->
+<!--          </el-form>-->
+<!--        </template>-->
+<!--      </el-table-column>-->
 
-      <el-table-column prop="name" label="名称" width="180">
+      <el-table-column prop="name" label="名称" width="100">
         <template slot-scope="scope">
           <el-form :model="scope.row">
-            <el-form-item size="mini" label-width="66px">
-              <el-input v-if="scope.row.isOK" v-model="scope.row.name" style="width:100%;hight:100%"></el-input>
+            <el-form-item size="mini" label-width="0px">
+              <el-input v-if="scope.row.isOK" v-model="name" style="width:100%;hight:100%"></el-input>
               <span v-else>{{scope.row.name}}</span>
             </el-form-item>
           </el-form>
@@ -25,7 +25,7 @@
 
       <el-table-column prop="sex" label="性别">
           <template slot-scope="scope">
-          <el-select v-model="scope.row.value" placeholder="请选择">
+          <el-select v-model="sex" placeholder="请选择">
             <el-option
              v-for="item in options"
             :key="item.value"
@@ -39,8 +39,8 @@
       <el-table-column prop="date" label="出身日期">
           <template slot-scope="scope">
           <el-form :model="scope.row">
-            <el-form-item size="mini" label-width="66px">
-              <el-input v-if="scope.row.isOK" v-model="scope.row.date" style="width:100%;hight:100%"></el-input>
+            <el-form-item size="mini" label-width="0px">
+              <el-input v-if="scope.row.isOK" v-model="date" style="width:100%;hight:100%"></el-input>
               <span v-else>{{scope.row.date}}</span>
             </el-form-item>
           </el-form>
@@ -50,52 +50,78 @@
       <el-table-column prop="ID" label="身份证号">
           <template slot-scope="scope">
           <el-form :model="scope.row">
-            <el-form-item size="mini" label-width="66px">
-              <el-input v-if="scope.row.isOK" v-model="scope.row.ID" style="width:100%;hight:100%"></el-input>
+            <el-form-item size="mini" label-width="0px">
+              <el-input v-if="scope.row.isOK" v-model="ID" style="width:100%;hight:100%"></el-input>
               <span v-else>{{scope.row.ID}}</span>
             </el-form-item>
           </el-form>
         </template>
       </el-table-column>
 
-      <el-table-column prop="dep" label="部门">
-          <template slot-scope="scope">
-          <el-form :model="scope.row">
-            <el-form-item size="mini" label-width="66px">
-              <el-input v-if="scope.row.isOK" v-model="scope.row.dep" style="width:100%;hight:100%"></el-input>
-              <span v-else>{{scope.row.dep}}</span>
-            </el-form-item>
-          </el-form>
-        </template>
-      </el-table-column>
+<!--      <el-table-column prop="dep" label="部门">-->
+<!--          <template slot-scope="scope">-->
+<!--          <el-form :model="scope.row">-->
+<!--            <el-form-item size="mini" label-width="30px">-->
+<!--              <el-input v-if="scope.row.isOK" v-model="dep" style="width:100%;hight:100%"></el-input>-->
+<!--              <span v-else>{{scope.row.dep}}</span>-->
+<!--            </el-form-item>-->
+<!--          </el-form>-->
+<!--        </template>-->
+<!--      </el-table-column>-->
 
-      <el-table-column prop="date_in" label="入职日期">
-          <template slot-scope="scope">
-          <el-form :model="scope.row">
-            <el-form-item size="mini" label-width="66px">
-              <el-input v-if="scope.row.isOK" v-model="scope.row.date_in" style="width:100%;hight:100%"></el-input>
-              <span v-else>{{scope.row.date_in}}</span>
-            </el-form-item>
-          </el-form>
-        </template>
-      </el-table-column>
+     <el-table-column prop="department" label="部门">
+       <template slot-scope="scope">
+         <el-select v-model="dep" placeholder="请选择"  >
+           <el-option
+             v-for="item in department"
+             :key="item.department_id"
+             :label="item.department_name"
+             :value="item.department_id">
+           </el-option>
+         </el-select>
+       </template>
+     </el-table-column>
 
-      <el-table-column prop="date_work" label="工作日期">
-          <template slot-scope="scope">
-          <el-form :model="scope.row">
-            <el-form-item size="mini" label-width="66px">
-              <el-input v-if="scope.row.isOK" v-model="scope.row.date_work" style="width:100%;hight:100%"></el-input>
-              <span v-else>{{scope.row.date_work}}</span>
-            </el-form-item>
-          </el-form>
-        </template>
-      </el-table-column>
+     <el-table-column prop="job" label="岗位">
+       <template slot-scope="scope">
+         <el-select v-model="job_id" placeholder="请选择"  >
+           <el-option
+             v-for="item in job"
+             :key="item.job_id"
+             :label="item.job_name"
+             :value="item.job_id">
+           </el-option>
+         </el-select>
+       </template>
+     </el-table-column>
+
+<!--      <el-table-column prop="date_in" label="入职日期">-->
+<!--          <template slot-scope="scope">-->
+<!--          <el-form :model="scope.row">-->
+<!--            <el-form-item size="mini" label-width="66px">-->
+<!--              <el-input v-if="scope.row.isOK" v-model="d" style="width:100%;hight:100%"></el-input>-->
+<!--              <span v-else>{{scope.row.date_in}}</span>-->
+<!--            </el-form-item>-->
+<!--          </el-form>-->
+<!--        </template>-->
+<!--      </el-table-column>-->
+
+<!--      <el-table-column prop="date_work" label="工作日期">-->
+<!--          <template slot-scope="scope">-->
+<!--          <el-form :model="scope.row">-->
+<!--            <el-form-item size="mini" label-width="66px">-->
+<!--              <el-input v-if="scope.row.isOK" v-model="scope.row.date_work" style="width:100%;hight:100%"></el-input>-->
+<!--              <span v-else>{{scope.row.date_work}}</span>-->
+<!--            </el-form-item>-->
+<!--          </el-form>-->
+<!--        </template>-->
+<!--      </el-table-column>-->
 
       <el-table-column prop="type_work" label="工作形式">
           <template slot-scope="scope">
           <el-form :model="scope.row">
-            <el-form-item size="mini" label-width="66px">
-              <el-input v-if="scope.row.isOK" v-model="scope.row.type_work" style="width:100%;hight:100%"></el-input>
+            <el-form-item size="mini" label-width="30px">
+              <el-input v-if="scope.row.isOK" v-model="type_work" style="width:100%;hight:100%"></el-input>
               <span v-else>{{scope.row.type_work}}</span>
             </el-form-item>
           </el-form>
@@ -104,7 +130,7 @@
 
         <el-table-column prop="address" label="人员来源">
           <template slot-scope="scope">
-          <el-select v-model="scope.row.id" placeholder="请选择">
+          <el-select v-model="address" placeholder="请选择">
             <el-option
              v-for="item in choose"
             :key="item.id"
@@ -115,27 +141,38 @@
         </template>
       </el-table-column>
 
-      <el-table-column prop="text_start" label="试用期开始日期">
-          <template slot-scope="scope">
-          <el-form :model="scope.row">
-            <el-form-item size="mini" label-width="66px">
-              <el-input v-if="scope.row.isOK" v-model="scope.row.text_start" style="width:100%;hight:100%"></el-input>
-              <span v-else>{{scope.row.text_start}}</span>
-            </el-form-item>
-          </el-form>
-        </template>
-      </el-table-column>
+     <el-table-column prop="last" label="试用期长度(月)" width="100">
+       <template slot-scope="scope">
+         <el-form :model="scope.row">
+           <el-form-item size="mini" label-width="30px">
+             <el-input v-if="scope.row.isOK" v-model="last" style="width:100%;hight:100%"></el-input>
+             <span v-else>{{scope.row.last}}</span>
+           </el-form-item>
+         </el-form>
+       </template>
+     </el-table-column>
 
-      <el-table-column prop="text_end" label="试用期结束日期">
-          <template slot-scope="scope">
-          <el-form :model="scope.row">
-            <el-form-item size="mini" label-width="66px">
-              <el-input v-if="scope.row.isOK" v-model="scope.row.text_end" style="width:100%;hight:100%"></el-input>
-              <span v-else>{{scope.row.text_end}}</span>
-            </el-form-item>
-          </el-form>
-        </template>
-      </el-table-column>
+<!--      <el-table-column prop="text_start" label="试用期开始日期">-->
+<!--          <template slot-scope="scope">-->
+<!--          <el-form :model="scope.row">-->
+<!--            <el-form-item size="mini" label-width="66px">-->
+<!--              <el-input v-if="scope.row.isOK" v-model="scope.row.text_start" style="width:100%;hight:100%"></el-input>-->
+<!--              <span v-else>{{scope.row.text_start}}</span>-->
+<!--            </el-form-item>-->
+<!--          </el-form>-->
+<!--        </template>-->
+<!--      </el-table-column>-->
+
+<!--      <el-table-column prop="text_end" label="试用期结束日期">-->
+<!--          <template slot-scope="scope">-->
+<!--          <el-form :model="scope.row">-->
+<!--            <el-form-item size="mini" label-width="66px">-->
+<!--              <el-input v-if="scope.row.isOK" v-model="scope.row.text_end" style="width:100%;hight:100%"></el-input>-->
+<!--              <span v-else>{{scope.row.text_end}}</span>-->
+<!--            </el-form-item>-->
+<!--          </el-form>-->
+<!--        </template>-->
+<!--      </el-table-column>-->
 
       <el-table-column label="操作" align="center" min-width="100">
 　　　　<template slot-scope="scope">
@@ -147,45 +184,95 @@
 
 <script>
 import {postRequest} from "../uitls/api";
+import {getRequest} from "../uitls/api";
 
 export default {
 
-     methods: {
-       modifyUser(){
-        let _this=this;
-         postRequest(this.rootUrl+"/staff/assStaff?sid="+_this.scope.row.num+"&sex="+_this.scope.row.sex+"&name="+_this.scope.row.name+"&birthday="+_this.row.date
-         +"&id_no="+_this.scope.row.ID+
-           "&origin_id="+_this.scope.row.address+"&form_id="+_this.scope.row.type_work+"&department_id="+_this.scope.row.dep+"&job_id="+_this.scope.row.job_id
-         +"&statu_id="+1).then(back=>{
+  mounted: function () {
 
-           let backDate=back.data;
-           _this.$message(backDate.result,backDate.message);
+    this.refresh();
+
+  },
+
+
+
+
+
+
+
+  methods: {
+       modifyUser() {
+         let _this = this;
+
+         if (_this.sex === 2) {
+           _this.sex_2 = "女"
+         }
+
+
+         // console.error(_this.sex);
+         // console.error(_this.sex_2);
+         let url = this.rootUrl + "/staff/addStaff?sid=" + _this.num + "&sex=" + _this.sex_2 + "&name=" + _this.name + "&birthday=" + _this.date
+           + "&id_no=" + _this.ID +
+           "&origin_id=" + _this.address + "&form_id=" + _this.type_work + "&department_id=" + _this.dep + "&job_id=" + _this.job_id + "&last=" + _this.last
+           + "&statu_id=" + 1;
+         postRequest(url).then(back => {
+
+           let backDate = back.data;
+           _this.$message(backDate.result, backDate.message);
 
 
          });
 
        },
+    refresh(){
+      //   获取岗位信息
+      let url_1=this.rootUrl+"/job/getJobList";
+      getRequest(url_1).then(back=>{
+        this.job=back.data;
+      })
 
-
+      let url_2=this.rootUrl+"/department/getDepartmentList";
+      getRequest(url_2).then(back=>{
+        this.department =back.data;
+      })
+    },
 
       dbclick(row, event, column){
       row.isOK =!row.isOK
     }
     },
 
+
     data() {
       return {
+        num: "1",
+        isOK: true,
+        name: "张三",
+        sex: 1,
+        sex_2:"男",
+        date:"2020-5-6",
+        ID:"430304199905032051",
+        dep:"1",
+        date_in:"2020-5-6",
+        date_work:"0956.",
+        type_work:"1",
+        address:"1",
+        text_start:"560653",
+        text_end:"564165",
+        job_id: "1",
+        last: 0,
+
        tableData: [
      {
        num: "1",
        isOK: true,
        name: "张三",
-<<<<<<< HEAD
+
        date:"2020.5.6",
-=======
+
        sex: "男",
        date:"2020-5-6",
->>>>>>> 54fcac99d93adc099a5c3ce61982a4c4a7424426
+
        ID:"525610661",
        dep:"秘书处",
        date_in:"2020-5-6",
@@ -194,10 +281,15 @@ export default {
        address:"云南",
        text_start:"560653",
        text_end:"564165",
+       last:0,
        job_id: "",
 
 
      }],
+        job:[],
+        department: [],
+
+
      options:[
        {
        value:1,
@@ -221,6 +313,7 @@ export default {
        label:'其他'
      }]
       }
+
     }
 }
 

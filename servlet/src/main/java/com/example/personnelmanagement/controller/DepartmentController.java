@@ -10,10 +10,14 @@ import org.springframework.expression.spel.ast.NullLiteral;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.io.EOFException;
 import java.util.List;
+import java.util.Map;
 
+@RestController
+@RequestMapping("/department")
 public class DepartmentController {
 
     @Autowired
@@ -59,6 +63,10 @@ public class DepartmentController {
     public List<StaffBean> selectByDepartment(@RequestParam("department_id")int department_id){
         List<StaffBean> list=departmentMapper.SelectByDepartment(department_id);
         return list;
+    }
+    @RequestMapping("/getDepartmentList")
+    public List<Map<String,Object>> getDepartment(){
+        return departmentMapper.getDepartmentList();
     }
 
 

@@ -4,6 +4,7 @@ import com.example.personnelmanagement.bean.DepartmentBean;
 import com.example.personnelmanagement.bean.StaffBean;
 
 import java.util.List;
+import java.util.Map;
 
 public interface DepartmentMapper {
     DepartmentBean getDepartment_id(int department_id);
@@ -16,6 +17,7 @@ public interface DepartmentMapper {
     DepartmentBean deleteDepartment(int department_id);
     int deleteCheck(int department_id);
     List<StaffBean> SelectByDepartment (int department_id);
+    List<Map<String,Object>> getDepartmentList();
 
     int getMaxId();
 

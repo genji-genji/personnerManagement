@@ -12,8 +12,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
+@RequestMapping("/job")
 public class jobController {
 
     @Autowired
@@ -56,7 +58,13 @@ public class jobController {
             return new MessageBean("success","删除成功");
         }
     }
-    @RequestMapping(value = "/selectJob",method = RequestMethod.GET)
+
+    @RequestMapping(value = "/getJobList")
+    public List<Map<String,Object>> getJobList(){
+        return jobService.getJobList();
+    }
+
+    @RequestMapping(value = "/selectStaffByJob",method = RequestMethod.GET)
     public List<StaffBean> selectJob(@RequestParam("job_id")int job_id){
         List<StaffBean> list= jobService.selectStaffByJob(job_id);
         return list;

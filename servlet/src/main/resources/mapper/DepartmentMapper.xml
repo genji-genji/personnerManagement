@@ -35,4 +35,7 @@
     <select id="SelectByDepartment" parameterType="int" resultType="com.example.personnelmanagement.bean.StaffBean">
         select a.* from staff a ,department b where a.department_id=#{department_id} and b.department_id = a.department_id
     </select>
+    <select id="getDepartmentList" resultType="java.util.Map">
+        select * from department;
+    </select>
 </mapper>
