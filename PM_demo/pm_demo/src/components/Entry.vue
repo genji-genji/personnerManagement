@@ -160,13 +160,13 @@ export default {
        date:"2020.5.6",
        ID:"525610661",
        dep:"秘书处",
-       dep_in:"2020.5.6",
-       dep_work:"0956.",
-       tyoe_wprk:"政治职工",
+       date_in:"2020.5.6",
+       date_work:"0956.",
+       type_work:"政治职工",
        address:"云南",
        text_start:"560653",
        text_end:"564165",
-       
+
      }]
       }
     }
