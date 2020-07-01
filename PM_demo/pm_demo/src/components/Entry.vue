@@ -146,8 +146,28 @@
 </template>
 
 <script>
+import {postRequest} from "../uitls/api";
+
 export default {
+
      methods: {
+       modifyUser(){
+        let _this=this;
+         postRequest(this.rootUrl+"/staff/assStaff?sid="+_this.scope.row.num+"&sex="+_this.scope.row.sex+"&name="+_this.scope.row.name+"&birthday="+_this.row.date
+         +"&id_no="+_this.scope.row.ID+
+           "&origin_id="+_this.scope.row.address+"&form_id="+_this.scope.row.type_work+"&department_id="+_this.scope.row.dep+"&job_id="+_this.scope.row.job_id
+         +"&statu_id="+1).then(back=>{
+
+           let backDate=back.data;
+           _this.$message(backDate.result,backDate.message);
+
+
+         });
+
+       },
+
+
+
       dbclick(row, event, column){
       row.isOK =!row.isOK
     }
@@ -160,15 +180,22 @@ export default {
        num: "1",
        isOK: true,
        name: "张三",
+<<<<<<< HEAD
        date:"2020.5.6",
+=======
+       sex: "男",
+       date:"2020-5-6",
+>>>>>>> 54fcac99d93adc099a5c3ce61982a4c4a7424426
        ID:"525610661",
        dep:"秘书处",
-       date_in:"2020.5.6",
+       date_in:"2020-5-6",
        date_work:"0956.",
        type_work:"政治职工",
        address:"云南",
        text_start:"560653",
        text_end:"564165",
+       job_id: "",
+
 
      }],
      options:[
