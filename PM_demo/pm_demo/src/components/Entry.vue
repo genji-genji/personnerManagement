@@ -122,7 +122,7 @@
         </template>
       </el-table-column>
 
-      <el-table-column prop="atext_end" label="试用期结束日期">
+      <el-table-column prop="text_end" label="试用期结束日期">
           <template slot-scope="scope">
           <el-form :model="scope.row">
             <el-form-item size="mini" label-width="66px">
@@ -157,6 +157,16 @@ export default {
        isOK: true,
        name: "张三",
        sex: "男",
+       date:"2020.5.6",
+       ID:"525610661",
+       dep:"秘书处",
+       dep_in:"2020.5.6",
+       dep_work:"0956.",
+       tyoe_wprk:"政治职工",
+       address:"云南",
+       text_start:"560653",
+       text_end:"564165",
+       
      }]
       }
     }
