@@ -23,14 +23,16 @@
         </template>
       </el-table-column>
 
-      <el-table-column prop="post_type" label="类型">
+        <el-table-column prop="type" label="类型">
           <template slot-scope="scope">
-          <el-form :model="scope.row">
-            <el-form-item size="mini" label-width="66px">
-              <el-input v-if="scope.row.isOK" v-model="scope.row.post_type" style="width:100%;hight:100%"></el-input>
-              <span v-else>{{scope.row.post_type}}</span>
-            </el-form-item>
-          </el-form>
+          <el-select v-model="scope.row.value" placeholder="请选择">
+            <el-option
+             v-for="item in options"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value">
+            </el-option>
+          </el-select>
         </template>
       </el-table-column>
 
@@ -58,7 +60,24 @@ export default {
        isOK: true,
        post_name: "张三",
        post_type: "上海市普陀区金沙江路 1518 弄",
-     }]
+     }],
+     options:[{
+       value:1,
+       label:"管理",
+     },
+     {
+       value:2,
+       label:"技术"
+     },
+     {
+       value:3,
+       label:"营销"
+     },
+     {
+       value:4,
+       label:"市场"
+     }
+     ]
       }
     }
 }

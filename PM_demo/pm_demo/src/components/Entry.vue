@@ -25,12 +25,14 @@
 
       <el-table-column prop="sex" label="性别">
           <template slot-scope="scope">
-          <el-form :model="scope.row">
-            <el-form-item size="mini" label-width="66px">
-              <el-input v-if="scope.row.isOK" v-model="scope.row.sex" style="width:100%;hight:100%"></el-input>
-              <span v-else>{{scope.row.sex}}</span>
-            </el-form-item>
-          </el-form>
+          <el-select v-model="scope.row.value" placeholder="请选择">
+            <el-option
+             v-for="item in options"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value">
+            </el-option>
+          </el-select>
         </template>
       </el-table-column>
 
@@ -102,12 +104,14 @@
 
         <el-table-column prop="address" label="人员来源">
           <template slot-scope="scope">
-          <el-form :model="scope.row">
-            <el-form-item size="mini" label-width="66px">
-              <el-input v-if="scope.row.isOK" v-model="scope.row.address" style="width:100%;hight:100%"></el-input>
-              <span v-else>{{scope.row.adress}}</span>
-            </el-form-item>
-          </el-form>
+          <el-select v-model="scope.row.id" placeholder="请选择">
+            <el-option
+             v-for="item in choose"
+            :key="item.id"
+            :label="item.label"
+            :value="item.id">
+            </el-option>
+          </el-select>
         </template>
       </el-table-column>
 
@@ -156,7 +160,6 @@ export default {
        num: "1",
        isOK: true,
        name: "张三",
-       sex: "男",
        date:"2020.5.6",
        ID:"525610661",
        dep:"秘书处",
@@ -167,6 +170,28 @@ export default {
        text_start:"560653",
        text_end:"564165",
 
+     }],
+     options:[
+       {
+       value:1,
+       label:'男'
+     },
+     {
+       value:2,
+       label:'女'
+     }],
+     choose:[
+       {
+       id:'a',
+       label:'校园招聘'
+     },
+     {
+       id:'b',
+       label:'社会招聘'
+     },
+     {
+       id:'c',
+       label:'其他'
      }]
       }
     }

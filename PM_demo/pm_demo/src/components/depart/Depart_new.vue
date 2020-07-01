@@ -23,29 +23,20 @@
         </template>
       </el-table-column>
 
-      <el-table-column prop="type" label="类型">
+        <el-table-column prop="type" label="类型">
           <template slot-scope="scope">
-          <el-form :model="scope.row">
-            <el-form-item size="mini" label-width="66px">
-              <el-input v-if="scope.row.isOK" v-model="scope.row.type" style="width:100%;hight:100%"></el-input>
-              <span v-else>{{scope.row.type}}</span>
-            </el-form-item>
-          </el-form>
+          <el-select v-model="scope.row.value" placeholder="请选择">
+            <el-option
+             v-for="item in options"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value">
+            </el-option>
+          </el-select>
         </template>
       </el-table-column>
 
-      <!-- <el-table-column>
-        <el-select v-model="value" placeholder="请选择">
-    <el-option
-      v-for="item in options"
-      :key="item.value"
-      :label="item.label"
-      :value="item.value">
-    </el-option>
-  </el-select>
-      </el-table-column> -->
-
-    
+      
 
       <el-table-column prop="phone" label="电话">
           <template slot-scope="scope">
@@ -107,7 +98,18 @@ export default {
        phone:"1561564165",
        email:"@45949",
        date:"2020.6.6"
-     }]
+     }],
+        options:[
+          {
+            value:1,
+            label:'公司'
+          },
+          {
+            value:2,
+            label:'部门'
+          },
+        ]
+
       }
     }
 }
