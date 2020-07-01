@@ -14,6 +14,13 @@ public class JobBean {
     public JobBean(){
 
     }
+    public JobBean(int job_id,String job_name,int max_number,int type_id){
+        this.job_id=job_id;
+        this.job_name=job_name;
+        this.max_number=max_number;
+        this.type_id=type_id;
+
+    }
     public JobBean(int job_id,String job_name,int curent_number,int max_number,int type_id){
         this.job_id=job_id;
         this.job_name=job_name;

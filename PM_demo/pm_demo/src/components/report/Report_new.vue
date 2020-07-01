@@ -1,21 +1,21 @@
 <template>
     <el-table
-    :data="tableData"
+    :data="staffList"
     height="250"
     border
     style="width: 100%">
     <el-table-column
-      prop="num"
+      prop="sid"
       label="序号"
       width="180">
     </el-table-column>
     <el-table-column
-      prop="name_dep"
+      prop="department_name"
       label="部门名称"
       width="180">
     </el-table-column>
     <el-table-column
-      prop="name_post"
+      prop="job_name"
       label="岗位名称">
     </el-table-column>
     <el-table-column
@@ -27,20 +27,38 @@
       label="性别">
     </el-table-column>
     <el-table-column
-      prop="date_in"
+      prop="START_TIME"
       label="入职日期">
     </el-table-column>
-    <el-table-column
-      prop="edu"
-      label="学历">
-    </el-table-column>
+<!--    <el-table-column-->
+<!--      prop="edu"-->
+<!--      label="学历">-->
+<!--    </el-table-column>-->
   </el-table>
 </template>
 
 <script>
+import {getRequest} from "../../uitls/api";
+
 export default {
-    data(){
+
+  mounted:function () {
+
+    let url=this.rootUrl +"/staff/getNewStaffList";
+
+    getRequest(url).then(back=>{
+
+      this.staffList=back.data
+
+    })
+
+  },
+
+  data(){
         return{
+
+          staffList:[],
+
             tableData:[
                 {
                     num:'1',

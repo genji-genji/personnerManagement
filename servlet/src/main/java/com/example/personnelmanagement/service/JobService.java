@@ -12,6 +12,8 @@ public interface JobService {
     int addJob(JobBean jobBean);
     int updateJob(JobBean jobBean);
     int deleteJob(int job_id);
+    JobBean getJobById(int job_id);
     List<Map<String,Object>> getJobList();
-    List<StaffBean> selectStaffByJob(int job_id);
+    List<Map<String,Object>> getJobTypeList();
+    List<Map<String,Object>> selectStaffByJob(int job_id);
 }

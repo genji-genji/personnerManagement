@@ -71,18 +71,21 @@ export default new Router({
           component: Post_new
         },
         {
-          path: '/3-2',
-          component: Post_re
-        },
-        {
+          name:'Post_re_rel',
           path: '/Post_re_rel',
           component: Post_re_rel
+        },
+        {
+          name: 'Post_re',
+          path: '/3-2',
+          component: Post_re
         },
         {
           path: '/3-3',
           component: Select_post
         },
         {
+          name: 'Select_news',
           path: '/Select_news',
           component: Select_news
         },

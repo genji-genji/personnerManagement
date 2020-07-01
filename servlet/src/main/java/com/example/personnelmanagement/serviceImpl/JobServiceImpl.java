@@ -36,12 +36,21 @@ public class JobServiceImpl implements JobService {
     }
 
     @Override
-    public List<StaffBean> selectStaffByJob(int job_id) {
+    public List<Map<String,Object>> selectStaffByJob(int job_id) {
         return jobMapper.selectStaffByJob(job_id);
     }
 
     @Override
     public List<Map<String, Object>> getJobList() {
         return jobMapper.getJobList();
+    }
+    @Override
+    public List<Map<String, Object>> getJobTypeList() {
+        return jobMapper.getJobTypeList();
+    }
+
+    @Override
+    public JobBean getJobById(int job_id) {
+        return jobMapper.getJobById(job_id);
     }
 }

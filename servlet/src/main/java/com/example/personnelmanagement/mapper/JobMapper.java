@@ -13,6 +13,7 @@ public interface JobMapper {
     int deleteCheck(int job_id);
     int getMaxId();
     List<Map<String,Object>> getJobList();
-    JobBean selectCAndMAXN(int job_id);
-    List<StaffBean> selectStaffByJob(int job_id);
+    List<Map<String,Object>> getJobTypeList();
+    JobBean getJobById(int job_id);
+    List<Map<String,Object>> selectStaffByJob(int job_id);
 }

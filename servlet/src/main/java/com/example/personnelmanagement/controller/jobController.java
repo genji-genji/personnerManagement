@@ -22,9 +22,12 @@ public class jobController {
     JobService jobService;
 
     @RequestMapping(value = "/addJob",method = RequestMethod.POST)
-    public MessageBean addJob(int job_id,String job_name,int curent_number,int max_number,int type_id){
+    public MessageBean addJob(String job_name,String max_number,String type_id){
 
-        JobBean jobBean =new JobBean(job_id,job_name,curent_number,max_number,type_id);
+        int maxInt=Integer.parseInt(max_number);
+        int typeInt=Integer.parseInt(type_id);
+
+        JobBean jobBean =new JobBean(0,job_name,0,maxInt,typeInt);
 
         int result= jobService.addJob(jobBean);
         if (result==1){
@@ -36,8 +39,12 @@ public class jobController {
     }
 
     @RequestMapping(value = "/updateJob",method = RequestMethod.PUT)
-    public MessageBean updateJob(int job_id,String job_name,int curent_number,int max_number,int type_id){
-        JobBean jobBean =new JobBean(job_id,job_name,curent_number,max_number,type_id);
+    public MessageBean updateJob(String job_id,String job_name,String max_number,String type_id){
+        int jobInt=Integer.parseInt(job_id);
+        int maxInt=Integer.parseInt(max_number);
+        int typeInt=Integer.parseInt(type_id);
+
+        JobBean jobBean =new JobBean(jobInt,job_name,maxInt,typeInt);
         int result = jobService.updateJob(jobBean);
 
         if (result==1){
@@ -64,9 +71,26 @@ public class jobController {
         return jobService.getJobList();
     }
 
+    @RequestMapping(value = "/getJobTypeList")
+    public List<Map<String,Object>> getJobTypeList(){
+        return jobService.getJobTypeList();
+    }
+
+    @RequestMapping(value = "getJobById",method = RequestMethod.GET)
+    public JobBean getJobById(String job_id){
+        int jobInt=Integer.parseInt(job_id);
+        return jobService.getJobById(jobInt);
+
+    }
+
+
+
     @RequestMapping(value = "/selectStaffByJob",method = RequestMethod.GET)
-    public List<StaffBean> selectJob(@RequestParam("job_id")int job_id){
-        List<StaffBean> list= jobService.selectStaffByJob(job_id);
+    public List<Map<String,Object>> selectJob(String job_id){
+
+        int jobInt= Integer.parseInt(job_id);
+
+        List<Map<String,Object>> list= jobService.selectStaffByJob(jobInt);
         return list;
     }
 }

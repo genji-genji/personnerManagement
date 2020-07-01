@@ -117,25 +117,39 @@
 <!--        </template>-->
 <!--      </el-table-column>-->
 
-      <el-table-column prop="type_work" label="工作形式">
-          <template slot-scope="scope">
-          <el-form :model="scope.row">
-            <el-form-item size="mini" label-width="30px">
-              <el-input v-if="scope.row.isOK" v-model="type_work" style="width:100%;hight:100%"></el-input>
-              <span v-else>{{scope.row.type_work}}</span>
-            </el-form-item>
-          </el-form>
-        </template>
-      </el-table-column>
+<!--      <el-table-column prop="type_work" label="工作形式">-->
+<!--          <template slot-scope="scope">-->
+<!--          <el-form :model="scope.row">-->
+<!--            <el-form-item size="mini" label-width="30px">-->
+<!--              <el-input v-if="scope.row.isOK" v-model="type_work" style="width:100%;hight:100%"></el-input>-->
+<!--              <span v-else>{{scope.row.type_work}}</span>-->
+<!--            </el-form-item>-->
+<!--          </el-form>-->
+<!--        </template>-->
+<!--      </el-table-column>-->
+
+
+     <el-table-column prop="form" label="工作形式">
+       <template slot-scope="scope">
+         <el-select v-model="type_work" placeholder="请选择"  >
+           <el-option
+             v-for="item in form"
+             :key="item.FORM_id"
+             :label="item.FORM_name"
+             :value="item.FORM_id">
+           </el-option>
+         </el-select>
+       </template>
+     </el-table-column>
 
         <el-table-column prop="address" label="人员来源">
           <template slot-scope="scope">
           <el-select v-model="address" placeholder="请选择">
             <el-option
-             v-for="item in choose"
-            :key="item.id"
-            :label="item.label"
-            :value="item.id">
+             v-for="item in origin"
+            :key="item.origin_id"
+            :label="item.origin_name"
+            :value="item.origin_id">
             </el-option>
           </el-select>
         </template>
@@ -229,12 +243,22 @@ export default {
       let url_1=this.rootUrl+"/job/getJobList";
       getRequest(url_1).then(back=>{
         this.job=back.data;
-      })
+      });
 
       let url_2=this.rootUrl+"/department/getDepartmentList";
       getRequest(url_2).then(back=>{
         this.department =back.data;
+      });
+
+      let url_3=this.rootUrl+"/staff/getFormList";
+      getRequest(url_3).then(back=>{
+        this.form=back.data;
+      });
+      let url_4=this.rootUrl+"/staff/getOriginList";
+      getRequest(url_4).then(back=>{
+        this.origin=back.data;
       })
+
     },
 
       dbclick(row, event, column){
@@ -252,14 +276,14 @@ export default {
         sex_2:"男",
         date:"2020-5-6",
         ID:"430304199905032051",
-        dep:"1",
+        dep:1,
         date_in:"2020-5-6",
         date_work:"0956.",
-        type_work:"1",
-        address:"1",
+        type_work:1,
+        address:1,
         text_start:"560653",
         text_end:"564165",
-        job_id: "1",
+        job_id: 1,
         last: 0,
 
        tableData: [
@@ -271,7 +295,6 @@ export default {
        date:"2020.5.6",
 
        sex: "男",
-       date:"2020-5-6",
 
        ID:"525610661",
        dep:"秘书处",
@@ -286,8 +309,11 @@ export default {
 
 
      }],
+
         job:[],
         department: [],
+        origin: [],
+        form: [],
 
 
      options:[

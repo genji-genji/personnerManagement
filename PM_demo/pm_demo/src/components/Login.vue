@@ -32,7 +32,6 @@
   export default {
   name: 'Login',
   mounted: function () {
-    this.$alert("fsdf","sdasd")
 
   },
 
@@ -64,7 +63,7 @@
         if (backDate== null||backDate.length == 0){
           _this.$alert("用户不存在或密码错误","登陆失败 ");
         }else{
-          _this.$alert(backDate.user_id,backDate.user_id);
+          _this.$alert(backDate.user_id+"欢迎使用",backDate.user_id);
           _this.$router.push('/home')
         }
       });

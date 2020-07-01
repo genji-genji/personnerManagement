@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class StaffServiceImpl implements StaffService {
@@ -20,8 +21,8 @@ public class StaffServiceImpl implements StaffService {
     }
 
     @Override
-    public List<StaffBean> getStaffList() {
-        return staffMapper.getStaffList();
+    public List<Map<String,Object>> getNewStaffList() {
+        return staffMapper.getNewStaffList();
     }
 
     @Override
@@ -56,4 +57,14 @@ public class StaffServiceImpl implements StaffService {
     public int getMaxSid(){return staffMapper.getMaxSid();}
     @Override
     public int getStaffNum(){return  staffMapper.getStaffNum();}
+
+    @Override
+    public List<Map<String, Object>> getFormList() {
+        return staffMapper.getFormList();
+    }
+
+    @Override
+    public List<Map<String, Object>> getOriginList() {
+        return staffMapper.getOriginList();
+    }
 }

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/staff")
@@ -25,10 +26,11 @@ public class StaffController {
         return staffService.getStaffMessage(staffId);
     }
 //获得全体员工表
-    @RequestMapping(value = "/getStaffList",method = RequestMethod.GET)
-    public List<StaffBean> getStaffList(){
-        return staffService.getStaffList();
+    @RequestMapping(value = "/getNewStaffList",method = RequestMethod.GET)
+    public List<Map<String,Object>> getStaffList(){
+        return staffService.getNewStaffList();
     }
+
 //员工入职
     @RequestMapping(value = "/addStaff",method = RequestMethod.POST)
     public MessageBean addStaff(String sid,String sex,String name,String birthday,String id_no,
@@ -89,6 +91,15 @@ public class StaffController {
         else {
             return new MessageBean("error","添加失败");
         }
+    }
+    @RequestMapping(value = "/getFormList",method = RequestMethod.GET)
+    public List<Map<String,Object>> getFormList(){
+        return staffService.getFormList();
+    }
+
+    @RequestMapping(value = "/getOriginList",method = RequestMethod.GET)
+    public List<Map<String,Object>> getOriginList(){
+        return staffService.getOriginList();
     }
 
 
