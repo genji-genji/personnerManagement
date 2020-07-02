@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53865a65-c69e-488c-b2b2-eed6605c79ac" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/depart/delete_department.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/depart/test_use_serch.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/depart/update_test_user.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/post/delete_post.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/post/Post_re_rel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/post/Post_re_rel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/post/Select_news.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/components/post/Select_news.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PM_demo/pm_demo/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../PM_demo/pm_demo/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dc5d6b38-97a2-4e8e-b2c8-0ca13081b292.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dc5d6b38-97a2-4e8e-b2c8-0ca13081b292.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/controller/jobController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/controller/jobController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/mapper/StaffMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personnelmanagement/mapper/StaffMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/jobController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/controller/jobController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/jobMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/personnelmanagement/mapper/jobMapper.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +44,38 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="personnelmanagement: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - personnelmanagement@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="personnelmanagement: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="origin: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - personnelmanagement@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="personnelmanagement: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="staff: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - personnelmanagement@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="personnelmanagement: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="test_use: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - personnelmanagement@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="personnelmanagement: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="user: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -249,27 +271,12 @@
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:dtest@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@2c2d892a" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:MySQL - personnelmanagement@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:MySQL - personnelmanagement@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@66e45828" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:MySQL - personnelmanagement@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@359ff692" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:MySQL - personnelmanagement@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@6759c446" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@74bcc562" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -304,7 +311,7 @@
       <workItem from="1593532995338" duration="1497000" />
       <workItem from="1593586860659" duration="3380000" />
       <workItem from="1593609695741" duration="23777000" />
-      <workItem from="1593660592561" duration="4049000" />
+      <workItem from="1593660592561" duration="10072000" />
     </task>
     <task id="LOCAL-00001" summary="StaffBean">
       <created>1592915748024</created>
@@ -509,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593639201836</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="finish">
+      <created>1593671253207</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1593671253207</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +548,8 @@
     <MESSAGE value="update staffmapper" />
     <MESSAGE value="api test" />
     <MESSAGE value="api test2" />
-    <option name="LAST_COMMIT_MESSAGE" value="api test2" />
+    <MESSAGE value="finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish" />
   </component>
   <component name="WindowStateProjectService">
     <state x="318" y="84" key="#Project_Structure" timestamp="1592829050907">
@@ -576,59 +591,59 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="344" y="62" key="#connectTest.contextLoads/0.0.1536.824@0.0.1536.824" timestamp="1592850666640" />
-    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1593639199065">
+    <state x="372" y="6" key="CommitChangelistDialog2" timestamp="1593671250027">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593639199065" />
+    <state x="372" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1593671250027" />
     <state x="465" y="8" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593336786865" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1593526033045">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1593526033045" />
-    <state x="550" y="104" key="ExecutionTargetDialog" timestamp="1593613408582">
+    <state x="550" y="104" key="ExecutionTargetDialog" timestamp="1593672043899">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="550" y="104" key="ExecutionTargetDialog/0.0.1536.824@0.0.1536.824" timestamp="1593613408582" />
+    <state x="550" y="104" key="ExecutionTargetDialog/0.0.1536.824@0.0.1536.824" timestamp="1593672043899" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1593660607730">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593660607730" />
-    <state width="1493" height="265" key="GridCell.Tab.0.bottom" timestamp="1593662991840">
+    <state width="1493" height="265" key="GridCell.Tab.0.bottom" timestamp="1593672043878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593662991840" />
+    <state width="1493" height="265" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593672043878" />
     <state width="1860" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593335273669" />
-    <state width="1493" height="265" key="GridCell.Tab.0.center" timestamp="1593662991839">
+    <state width="1493" height="265" key="GridCell.Tab.0.center" timestamp="1593672043877">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593662991839" />
+    <state width="1493" height="265" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593672043877" />
     <state width="1860" height="273" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593335273669" />
-    <state width="1493" height="265" key="GridCell.Tab.0.left" timestamp="1593662991839">
+    <state width="1493" height="265" key="GridCell.Tab.0.left" timestamp="1593672043877">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593662991839" />
+    <state width="1493" height="265" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593672043877" />
     <state width="1860" height="273" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593335273669" />
-    <state width="1493" height="265" key="GridCell.Tab.0.right" timestamp="1593662991839">
+    <state width="1493" height="265" key="GridCell.Tab.0.right" timestamp="1593672043877">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593662991839" />
+    <state width="1493" height="265" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593672043877" />
     <state width="1860" height="273" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593335273669" />
-    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1593662991840">
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1593672043878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593662991840" />
-    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1593662991840">
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593672043878" />
+    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1593672043878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1593662991840" />
-    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1593662991840">
+    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1593672043878" />
+    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1593672043878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1593662991840" />
-    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1593662991840">
+    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1593672043878" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1593672043878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1593662991840" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1593672043878" />
     <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1593639211780">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -657,10 +672,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="508" y="116" key="VCS.ChangeListViewerDialog/0.0.1536.824@0.0.1536.824" timestamp="1593530521650" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1593639204283">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1593671296849">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1593639204283" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1593671296849" />
     <state x="451" y="184" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593337856965" />
     <state x="349" y="68" key="com.intellij.database.dbimport.ImportDialog" timestamp="1593628572698">
       <screen x="0" y="0" width="1536" height="824" />
