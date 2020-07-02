@@ -9,6 +9,11 @@
       width="180">
     </el-table-column>
       <el-table-column
+        prop="statu_name"
+        label="状态"
+        width="180">
+      </el-table-column>
+      <el-table-column
         prop="name"
         label="姓名"
         width="180">

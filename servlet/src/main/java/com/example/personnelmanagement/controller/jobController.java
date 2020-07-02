@@ -56,14 +56,21 @@ public class jobController {
     }
     @RequestMapping(value = "/deleteJob",method = RequestMethod.DELETE)
     public MessageBean deleteJob(int job_id){
-        int check= jobService.deleteJob(job_id);
-
-        if (check>0){
+        int check;
+        try {
+             check= jobService.deleteJob(job_id);
+            if (check==1){
+                return new MessageBean("success","删除成功");
+            }
+            else {
+                return new MessageBean("error","没有这个岗位");
+            }
+        }catch (Exception e){
             return new MessageBean("error","岗位下还有员工");
         }
-        else {
-            return new MessageBean("success","删除成功");
-        }
+
+
+
     }
 
     @RequestMapping(value = "/getJobList")

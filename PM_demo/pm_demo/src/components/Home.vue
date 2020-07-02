@@ -65,6 +65,12 @@
                         <span>查询员工</span>
                       </template>
                     </el-menu-item>
+                    <el-menu-item index="3-4">
+                      <template slot="title">
+                        <i class="el-icon-search"></i>
+                        <span>删除岗位</span>
+                      </template>
+                    </el-menu-item>
                   </el-submenu>
                     <el-submenu index="3">
                         <!-- 一级菜单模板区 -->
@@ -91,6 +97,12 @@
                                 <span>员工查询</span>
                             </template>
                         </el-menu-item>
+                      <el-menu-item index="2-4">
+                        <template slot="title">
+                          <i class="el-icon-edit"></i>
+                          <span>删除部门</span>
+                        </template>
+                      </el-menu-item>
                     </el-submenu>
                     <el-submenu index="4">
                         <!-- 一级菜单模板区 -->
@@ -111,17 +123,17 @@
                             <span>离职报表</span>
                         </template>
                          </el-menu-item>
-                          <el-menu-item index="4-3">
-                             <template slot="title">
-                            <i class="el-icon-rank"></i>
-                            <span>部门调动报表</span>
-                        </template>
-                         </el-menu-item>
-                          <el-menu-item index="4-4">
-                             <template slot="title">
-                            <i class="el-icon-sort"></i>
-                            <span>岗位调动报表</span>
-                        </template>
+<!--                          <el-menu-item index="4-3">-->
+<!--                             <template slot="title">-->
+<!--                            <i class="el-icon-rank"></i>-->
+<!--                            <span>部门调动报表</span>-->
+<!--                        </template>-->
+<!--                         </el-menu-item>-->
+<!--                          <el-menu-item index="4-4">-->
+<!--                             <template slot="title">-->
+<!--                            <i class="el-icon-sort"></i>-->
+<!--                            <span>岗位调动报表</span>-->
+<!--                        </template>-->
 <!--                         </el-menu-item>-->
 <!--                          <el-menu-item index="4-5">-->
 <!--                             <template slot="title">-->

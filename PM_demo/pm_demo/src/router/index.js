@@ -22,6 +22,7 @@ import Report_post from '../components/report/Report_post'
 import Report_people from '../components/report/Report_people'
 import staff_quit from "../components/staff_quit";
 import quitStaff from "../components/depart/quitStaff";
+import delete_post from "../components/post/delete_post";
 
 Vue.use(Router)
 
@@ -73,6 +74,10 @@ export default new Router({
           component: Select_person
         },
         {
+          path: '/2-4',
+          component: delete_post
+        },
+        {
           path: '/Person_news',
           component: Person_news
         },
@@ -98,6 +103,10 @@ export default new Router({
           name: 'Select_news',
           path: '/Select_news',
           component: Select_news
+        },
+        {
+          path:'/3-4',
+          component :delete_post
         },
         {
           path: '/4-1',

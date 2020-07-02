@@ -26,4 +26,5 @@ public interface StaffMapper {
     int getStaffNum();
 
     int changeStaffMsg(int staffId);
+//    int updateTest();
 }

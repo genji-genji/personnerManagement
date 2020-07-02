@@ -72,7 +72,7 @@
 
       <el-table-column label="操作" align="center" min-width="100">
 　　　　<template slot-scope="scope">
-        <el-button type="info" @click="select()">查询</el-button>
+<!--        <el-button type="info" @click="select()">查询</el-button>-->
 　　　　　<el-button type="info" @click="modifyUser()">修改</el-button>
 　　　　</template>
 　　</el-table-column>
@@ -111,19 +111,19 @@ export default {
       row.isOK =!row.isOK
     },
 
-    select(){
-        let url=this.rootUrl+"/job/getJobById?job_id="+this.job_id;
-      getRequest(url).then(back=>{
-        let backdate=back.data;
-
-        this.job_id=backdate.job_id;
-        this.job_name=backdate.job_name;
-        this.current_number=backdate.current_number;
-        this.max_number=backdate.max_number;
-        this.type_id=backdate.type_id;
-
-      });
-    },
+    // select(){
+    //     let url=this.rootUrl+"/job/getJobById?job_id="+this.job_id;
+    //   getRequest(url).then(back=>{
+    //     let backdate=back.data;
+    //
+    //     this.job_id=backdate.job_id;
+    //     this.job_name=backdate.job_name;
+    //     this.current_number=backdate.current_number;
+    //     this.max_number=backdate.max_number;
+    //     this.type_id=backdate.type_id;
+    //
+    //   });
+    // },
     modifyUser(){
       let url=this.rootUrl+"job/updateJob?job_id="+this.job_id+"&job_name="+this.job_name+"&max_number="+this.max_number+"&type_id="+this.type_id;
       putRequest(url).then(back=>{
